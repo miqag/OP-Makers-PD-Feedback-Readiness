@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Leader Feedback on Opportunity Makers Readiness</title>
+<style>
+:root{
+ --navy:#00355F; --pale:#E2EDDC; --yellow:#F2CF13; --green:#3F8A6A;
+ --crimson:#C21943; --coral:#F26C4C; --gray:#4A4A4A; --link:#346F55;
+ --ink:#12181F; --muted:#5C6670; --line:#D8DEE3; --bg:#F4F6F7; --card:#FFFFFF;
+ --s1:var(--crimson); --s2:var(--coral); --s3:var(--green); --s4:var(--navy);
+ --head:"Franklin Gothic Heavy","Arial Black","Helvetica Neue",Arial,sans-serif;
+ --body:Arial,"Helvetica Neue",Helvetica,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+h1,h2,h3,h4{font-family:var(--head);font-weight:900;letter-spacing:-.01em;margin:0}
+a{color:var(--link)}
+
+/* ---------- header ---------- */
+header{background:var(--navy);color:#fff;padding:52px 0 40px;position:relative}
+header:after{content:"";position:absolute;left:0;right:0;bottom:0;height:7px;background:var(--yellow)}
+.eyebrow{font-family:var(--head);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--yellow);margin-bottom:14px}
+header h1{font-size:clamp(30px,4.6vw,50px);line-height:1.04;max-width:20ch}
+header p.sub{margin:18px 0 0;max-width:64ch;color:#C6D6E4;font-size:16px}
+.metastrip{display:flex;flex-wrap:wrap;gap:26px;margin-top:26px;padding-top:22px;border-top:1px solid rgba(255,255,255,.22)}
+.metastrip div{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#9FB6CA}
+.metastrip b{display:block;font-family:var(--head);font-size:26px;letter-spacing:0;text-transform:none;color:#fff;line-height:1.1}
+
+/* ---------- tabs ---------- */
+nav.tabs{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 1px 0 rgba(0,0,0,.03)}
+nav.tabs .wrap{display:flex;gap:4px;overflow-x:auto}
+.tab{appearance:none;border:0;background:none;font-family:var(--head);font-size:13px;letter-spacing:.06em;text-transform:uppercase;
+ color:var(--muted);padding:18px 16px;cursor:pointer;border-bottom:4px solid transparent;white-space:nowrap}
+.tab:hover{color:var(--navy)}
+.tab.on{color:var(--navy);border-bottom-color:var(--yellow)}
+main{padding:40px 0 90px}
+.panel{display:none}.panel.on{display:block}
+
+/* ---------- generic ---------- */
+.card{background:var(--card);border:1px solid var(--line);border-radius:3px}
+.pad{padding:26px 28px}
+.sec-h{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-family:var(--head);margin:0 0 14px}
+.rule{height:4px;width:52px;background:var(--yellow);margin:0 0 18px}
+h2.big{font-size:27px;margin-bottom:8px;color:var(--navy)}
+p.lede{color:var(--muted);max-width:78ch;margin:0 0 24px}
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:900px){.g3,.g2{grid-template-columns:1fr}}
+
+/* ---------- domain cards ---------- */
+.dcard{position:relative;overflow:hidden}
+.dcard:before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px}
+.dcard.Belonging:before{background:var(--coral)}
+.dcard.Consistency:before{background:var(--green)}
+.dcard.Coherence:before{background:var(--navy)}
+.dcard h3{font-size:19px;color:var(--navy);margin-bottom:2px}
+.dcard .sc{font-family:var(--head);font-size:46px;line-height:1;color:var(--navy);margin:12px 0 2px}
+.dcard .sc span{font-size:16px;color:var(--muted);font-family:var(--body);font-weight:400}
+.dcard p{margin:10px 0 0;font-size:13.5px;color:var(--muted)}
+.track{height:9px;background:#EAEEF1;border-radius:99px;overflow:hidden;margin-top:14px}
+.track i{display:block;height:100%;border-radius:99px}
+
+/* ---------- findings ---------- */
+.finding{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.finding:last-child{border-bottom:0}
+.finding .num{font-family:var(--head);font-size:13px;color:#fff;background:var(--navy);width:28px;height:28px;flex:0 0 28px;
+ border-radius:99px;display:grid;place-items:center;margin-top:2px}
+.finding h4{font-size:16.5px;color:var(--navy);margin-bottom:5px}
+.finding p{margin:0;color:var(--muted);font-size:14.5px}
+.finding b{color:var(--ink)}
+
+/* ---------- controls ---------- */
+.controls{display:flex;flex-wrap:wrap;gap:22px;align-items:flex-end;margin-bottom:8px}
+.ctl label{display:block;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-family:var(--head);margin-bottom:7px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:3px;overflow:hidden;background:#fff;flex-wrap:wrap}
+.seg button{appearance:none;border:0;background:#fff;font-family:var(--body);font-size:13px;padding:9px 14px;cursor:pointer;color:var(--muted);border-right:1px solid var(--line)}
+.seg button:last-child{border-right:0}
+.seg button:hover{background:#F0F3F5}
+.seg button.on{background:var(--navy);color:#fff}
+.legend{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin:22px 0 26px;font-size:13px;color:var(--muted)}
+.legend i{display:inline-block;width:13px;height:13px;border-radius:2px;margin-right:7px;vertical-align:-2px}
+
+.note{background:var(--pale);border-left:4px solid var(--green);padding:14px 18px;font-size:13.5px;color:#2C4A3B;border-radius:0 3px 3px 0}
+.note b{color:var(--navy)}
+
+/* ---------- bars ---------- */
+.dgroup{margin-bottom:34px}
+.dgroup > h3{font-size:15px;color:var(--navy);text-transform:uppercase;letter-spacing:.09em;padding-bottom:9px;border-bottom:2px solid var(--navy);margin-bottom:6px;display:flex;justify-content:space-between;align-items:baseline}
+.dgroup > h3 em{font-style:normal;font-family:var(--body);font-size:12.5px;color:var(--muted);letter-spacing:0;text-transform:none}
+.row{display:grid;grid-template-columns:minmax(0,1fr) 320px 74px;gap:18px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row .lab{font-size:14px;line-height:1.4}
+.row .lab small{display:block;color:var(--muted);font-size:11.5px;margin-top:3px;letter-spacing:.06em;text-transform:uppercase;font-family:var(--head)}
+.bar{display:flex;height:26px;border-radius:2px;overflow:hidden;background:#EEF1F3}
+.bar div{position:relative;transition:width .35s cubic-bezier(.4,0,.2,1);cursor:default}
+.bar div span{position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:11px;font-weight:bold}
+.avg{font-family:var(--head);font-size:20px;text-align:right;color:var(--navy)}
+.avg small{display:block;font-family:var(--body);font-size:10.5px;color:var(--muted);font-weight:400;letter-spacing:.05em}
+@media(max-width:820px){.row{grid-template-columns:1fr;gap:8px}.avg{text-align:left}}
+
+/* ---------- themes ---------- */
+.tq{background:var(--navy);color:#fff;padding:20px 24px;border-radius:3px 3px 0 0}
+.tq h3{font-size:18px}
+.tq p{margin:6px 0 0;color:#A9C1D4;font-size:13px}
+.tbody{border:1px solid var(--line);border-top:0;background:#fff;border-radius:0 0 3px 3px;padding:6px 24px 10px}
+.theme{padding:20px 0;border-bottom:1px solid var(--line)}
+.theme:last-child{border-bottom:0}
+.theme .th{display:flex;gap:14px;align-items:flex-start;cursor:pointer}
+.pill{font-family:var(--head);font-size:12px;background:var(--pale);color:#22503C;border-radius:99px;padding:5px 11px;white-space:nowrap;flex:0 0 auto}
+.theme h4{font-size:16.5px;color:var(--navy);margin-bottom:5px}
+.theme .desc{margin:0;color:var(--muted);font-size:14.5px}
+.chev{margin-left:auto;color:var(--muted);font-size:12px;flex:0 0 auto;padding-top:4px;font-family:var(--head);letter-spacing:.08em;text-transform:uppercase}
+.quotes{display:none;margin:16px 0 0 42px}
+.theme.open .quotes{display:block}
+blockquote{margin:0 0 14px;border-left:3px solid var(--yellow);padding:2px 0 2px 16px;font-size:14.5px;color:#2A3540}
+blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-family:var(--head)}
+
+/* ---------- responses ---------- */
+.search{width:100%;max-width:420px;padding:11px 14px;border:1px solid var(--line);border-radius:3px;font-family:var(--body);font-size:14px}
+.rcard{margin-bottom:14px}
+.rhead{display:flex;align-items:center;gap:12px;padding:14px 20px;border-bottom:1px solid var(--line);background:#FAFBFC}
+.chip{font-family:var(--head);font-size:11px;letter-spacing:.09em;text-transform:uppercase;padding:5px 10px;border-radius:2px;background:var(--navy);color:#fff}
+.rid{font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-family:var(--head)}
+.mini{margin-left:auto;display:flex;gap:3px}
+.mini i{width:11px;height:20px;border-radius:1px;display:block}
+.qa{padding:14px 20px;border-bottom:1px solid #EEF1F3}
+.qa:last-child{border-bottom:0}
+.qa .k{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);font-family:var(--head);margin-bottom:5px}
+.qa .v{font-size:14.5px}
+.qa .v.empty{color:#9AA4AD;font-style:italic}
+footer{border-top:1px solid var(--line);background:#fff;padding:26px 0;font-size:12.5px;color:var(--muted)}
+.hidden{display:none!important}
+</style></head><body>
+<header><div class="wrap">
+ <div class="eyebrow">Baseline Assessment &amp; Session Reflections</div>
+ <h1>Leader Feedback on Opportunity Makers Readiness</h1>
+ <p class="sub">How district and building leaders rated their current conditions across Belonging, Consistency, and Coherence &mdash; and what they said in their own words about what is working, what should come next, and what support they need.</p>
+ <div class="metastrip">
+  <div>Leaders responding<b id="mN">24</b></div>
+  <div>Indicators rated<b>11</b></div>
+  <div>Individual ratings<b id="mR">263</b></div>
+  <div>Open-ended responses<b id="mO">67</b></div>
+ </div>
+</div></header>
+
+<nav class="tabs"><div class="wrap">
+ <button class="tab on" data-p="overview">Overview</button>
+ <button class="tab" data-p="baseline">Baseline Assessment</button>
+ <button class="tab" data-p="themes">Open-Ended Themes</button>
+ <button class="tab" data-p="responses">All Responses</button>
+ <button class="tab" data-p="method">Method &amp; Notes</button>
+</div></nav>
+
+<main><div class="wrap">
+
+<!-- ============ OVERVIEW ============ -->
+<section class="panel on" id="p-overview">
+ <div class="rule"></div>
+ <h2 class="big">Where leaders say they stand today</h2>
+ <p class="lede">Each domain below is the average of its indicators on a four-point scale, where Never = 1, Sometimes = 2, Most of the time = 3, and Always = 4. All three domains sit between "Sometimes" and "Most of the time."</p>
+ <div class="grid g3" id="domainCards"></div>
+
+ <div style="height:38px"></div>
+ <div class="rule"></div>
+ <h2 class="big">What stands out in the data</h2>
+ <p class="lede">Every statement below is drawn directly from the 24 responses. Nothing is estimated or extrapolated.</p>
+ <div class="card pad"><div id="findings"></div></div>
+
+ <div style="height:38px"></div>
+ <div class="rule"></div>
+ <h2 class="big">The full distribution</h2>
+ <p class="lede">All ratings across all 11 indicators, pooled.</p>
+ <div class="card pad">
+   <div class="bar" id="totalBar" style="height:44px"></div>
+   <div class="legend" id="legend1" style="margin-bottom:0"></div>
+ </div>
+</section>
+
+<!-- ============ BASELINE ============ -->
+<section class="panel" id="p-baseline">
+ <div class="rule"></div>
+ <h2 class="big">Baseline Assessment, indicator by indicator</h2>
+ <p class="lede">Each bar shows how the group distributed across the four response options. Hover any segment for the exact count. Use the controls to filter by level or to re-rank indicators from strongest to weakest.</p>
+
+ <div class="controls">
+  <div class="ctl"><label>Filter by level</label><div class="seg" id="levelSeg"></div></div>
+  <div class="ctl"><label>Arrange</label><div class="seg" id="sortSeg">
+    <button class="on" data-s="domain">By domain</button>
+    <button data-s="desc">Strongest first</button>
+    <button data-s="asc">Weakest first</button>
+  </div></div>
+ </div>
+ <div class="legend" id="legend2"></div>
+ <div id="levelNote"></div>
+ <div style="height:20px"></div>
+ <div class="card pad" id="bars"></div>
+</section>
+
+<!-- ============ THEMES ============ -->
+<section class="panel" id="p-themes">
+ <div class="rule"></div>
+ <h2 class="big">Trends in the open-ended feedback</h2>
+ <p class="lede">Every written response was read and coded. Counts show how many of the 24 leaders raised each theme; a single response can carry more than one theme. Click a theme to read the responses behind it.</p>
+ <div id="themeBlocks"></div>
+</section>
+
+<!-- ============ RESPONSES ============ -->
+<section class="panel" id="p-responses">
+ <div class="rule"></div>
+ <h2 class="big">All responses, verbatim</h2>
+ <p class="lede">Complete written feedback with names removed. The eleven small blocks on each card show that leader's ratings in indicator order, colored by response.</p>
+ <div class="controls" style="margin-bottom:20px">
+  <div class="ctl" style="flex:1;min-width:260px"><label>Search the text</label><input class="search" id="q" placeholder="e.g. tier 1, time, walkthrough, buy in"></div>
+  <div class="ctl"><label>Level</label><div class="seg" id="levelSeg2"></div></div>
+ </div>
+ <div class="legend" id="legend3"></div>
+ <div id="respList"></div>
+ <p id="noHits" class="hidden" style="color:var(--muted)">No responses match that search.</p>
+</section>
+
+<!-- ============ METHOD ============ -->
+<section class="panel" id="p-method">
+ <div class="rule"></div>
+ <h2 class="big">Method &amp; notes</h2>
+ <div class="card pad" style="max-width:80ch">
+  <h4 style="color:var(--navy);font-size:16px;margin-bottom:6px">Source</h4>
+  <p style="margin-top:0;color:var(--muted)">A single post-session reflection form completed by 24 leaders. The form contained 11 Baseline Assessment indicators grouped under Belonging (3), Consistency (5), and Coherence (3), plus three open-ended questions.</p>
+  <h4 style="color:var(--navy);font-size:16px;margin:22px 0 6px">Scoring</h4>
+  <p style="margin-top:0;color:var(--muted)">Averages convert the four response options to points: Never = 1, Sometimes = 2, Most of the time = 3, Always = 4. Averages are used only to rank and compare indicators; the stacked bars remain the primary read, since an average can hide a split group.</p>
+  <h4 style="color:var(--navy);font-size:16px;margin:22px 0 6px">Completeness</h4>
+  <p style="margin-top:0;color:var(--muted)">One rating was left blank (Consistency &mdash; "In team meetings, teachers commit to concrete actions for individual students"), so that indicator reflects 23 responses rather than 24. Two leaders left the "doing well" question blank and three left the "support needed" question blank. Blanks are excluded from averages, never counted as zero.</p>
+  <h4 style="color:var(--navy);font-size:16px;margin:22px 0 6px">Levels</h4>
+  <p style="margin-top:0;color:var(--muted)">Levels are as leaders self-reported them. Subgroups are small &mdash; between 2 and 7 people &mdash; so level comparisons are directional only and should not be read as significant differences. One leader left the level blank and one identified by a specific building role; both are grouped as "Not specified."</p>
+  <h4 style="color:var(--navy);font-size:16px;margin:22px 0 6px">Anonymity</h4>
+  <p style="margin-top:0;color:var(--muted)">Respondent names have been removed. Within quotes, references to the district, individual buildings, and named colleagues are replaced with bracketed placeholders. Quotes are otherwise reproduced exactly as written, including original spelling.</p>
+  <h4 style="color:var(--navy);font-size:16px;margin:22px 0 6px">Theme coding</h4>
+  <p style="margin-top:0;color:var(--muted)">Themes were derived from the responses themselves rather than applied from a preset list. Because responses often address more than one idea, theme counts sum to more than the number of respondents.</p>
+ </div>
+</section>
+
+</div></main>
+<footer><div class="wrap">Based solely on the 24 submitted reflection forms. Ratings, counts, and quotes are reproduced from the source responses; no data has been supplemented or estimated.</div></footer>
+<script>
+const D = {"scale": ["Never", "Sometimes", "Most of the time", "Always"], "inds": [{"domain": "Belonging", "text": "The school has structures and practices that build collective knowledge of students."}, {"domain": "Belonging", "text": "Specialists collaborate with core classroom teachers to support students' individual needs."}, {"domain": "Belonging", "text": "The school has clear goals for growth that put students on track to reach grade level over time."}, {"domain": "Consistency", "text": "Every student works on grade-level work, with varying degrees of support and scaffolding as needed."}, {"domain": "Consistency", "text": "Most teachers use the adopted curriculum most of the time."}, {"domain": "Consistency", "text": "In team meetings, teachers commit to concrete actions for individual students."}, {"domain": "Consistency", "text": "Leaders name and reinforce foundational instructional practices to minimize variation between classrooms."}, {"domain": "Consistency", "text": "Leaders do regular, non-evaluative classroom walk-throughs and provide focused feedback."}, {"domain": "Coherence", "text": "All learning spaces \u2014 core classes, intervention, tutoring, and extended time \u2014 support Tier 1 content."}, {"domain": "Coherence", "text": "Intervention uses materials aligned to core instruction."}, {"domain": "Coherence", "text": "Leaders set one or two schoolwide goals each year, and clear barriers to help teachers focus on those goals."}], "levels": ["Central Office", "Elementary School", "Middle School", "High School", "Not specified"], "resp": [{"id": 1, "level": "Central Office", "r": ["Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes"], "well": "Belonging", "next": "Consistency", "support": ""}, {"id": 2, "level": "Elementary School", "r": ["Most of the time", "Sometimes", "Sometimes", "Sometimes", "Most of the time", "Most of the time", "Most of the time", "Always", "Always", "Most of the time", "Always"], "well": "Much work has been done to support consistency and am hopeful that our mtss-a work will support greater academic coherence across tiers.", "next": "See above.", "support": "Best way for staff and paras to support supplemental materials within our curriculum to support coherence when you may not have a full understanding of all materials available at each grade level."}, {"id": 3, "level": "Central Office", "r": ["Most of the time", "Sometimes", "Sometimes", "Sometimes", "Most of the time", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Most of the time"], "well": "At an elementary level [the district] does well at knowing the students needs and invests in their well being.", "next": "I believe [the district] should focus on coherence across all levels to create a shared focus towards tier 1 instruction.", "support": "Time to collaborate at a district level for teachers to gain coherence in instruction."}, {"id": 4, "level": "High School", "r": ["Always", "Most of the time", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Most of the time", "Sometimes", "Most of the time", "Sometimes", "Most of the time"], "well": "Consistency in providing HQIM.", "next": "Ensuring the HQIM are being used.", "support": "Getting teachers to let go of thinking they need to supplement the materials."}, {"id": 5, "level": "Elementary School", "r": ["Most of the time", "Sometimes", "Most of the time", "Most of the time", "Most of the time", "Most of the time", "Most of the time", "Most of the time", "Most of the time", "Most of the time", "Most of the time"], "well": "The MTSS process we have developed for ELA in k-4", "next": "Continue to reinforce the need to be teaching grade level content and increase the number of students doing the thinking.", "support": "Action steps around Consistency with interventions and supports."}, {"id": 6, "level": "High School", "r": ["Sometimes", "Sometimes", "Never", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Most of the time"], "well": "", "next": "Opportunity for administrative teams to work together to develop preK -12 vision for implementing belonging, consistency and coherence goals.", "support": ""}, {"id": 7, "level": "Central Office", "r": ["Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Most of the time"], "well": "CIP is moving us in a good direction", "next": "Simplifying and focusing on cherrnce around tier 1", "support": "A team that is moving in the same direction and open to feedback. I also believe considering moving back to a PLC structure could help us become more consistent, coherent, and improve a sense of belonging."}, {"id": 8, "level": "High School", "r": ["Sometimes", "Most of the time", "Most of the time", "Sometimes", "Most of the time", "Sometimes", "Sometimes", "Sometimes", "Most of the time", "Sometimes", "Always"], "well": "We have been targeting Belonging for the past school year and will continue to drive that home. We need to work on the other two more consistently.", "next": "We need to focus on Consistency. It's difficult in the high school setting with so many departments, but we are committed to figuring out what works best for our students.", "support": "We have the materials and curriculum. We need teacher buy in."}, {"id": 9, "level": "Not specified", "r": ["Sometimes", "Sometimes", "Sometimes", "Sometimes", "Most of the time", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes"], "well": "I think [the district] has some \"bones\" in place that will allow these to happen, it is more about focusing and narrowing what is considered \"priority\".", "next": "I think strong Tier 1 instruction and access is a good and important first step. Most content areas have HQIM, the focus needs to be more on how we are using it in all spaces, with all kids.", "support": "I think more visibility and instructional mindset from leaders both building and teacher leaders can help to work with strong Tier 1 instruction."}, {"id": 10, "level": "Central Office", "r": ["Sometimes", "Sometimes", "Most of the time", "Sometimes", "Most of the time", "Sometimes", "Sometimes", "Most of the time", "Sometimes", "Sometimes", "Most of the time"], "well": "We have pockets of great consistency and belonging led my building leaders that have high expectations for themselves as building leaders.", "next": "I\u2019d love to see our district work towards improving our consistency. I feel that an improvement in consistency across our district will have a positive impact on belonging and coherence as well.", "support": "Our team has some new members so we just need some time to learn each others strengths and find out the best way we can support our leaders."}, {"id": 11, "level": "Elementary School", "r": ["Most of the time", "Sometimes", "Sometimes", "Sometimes", "Most of the time", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes"], "well": "Providing HQIM", "next": "Coherence between interventions for students. Do they focus on grade level needs or missing baseline skills? Or both?", "support": "I would like my IF to do walk throughs with me to help me calibrate what I am seeing in classrooms to what I should be seeing in every lesson in every classroom."}, {"id": 12, "level": "Middle School", "r": ["Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Most of the time", "Most of the time", "Sometimes", "Most of the time", "Sometimes", "Always"], "well": "I think we have a good start with each category we just need to improve on each one.", "next": "Attainable goals that are specific so teachers can focus one one or a few improvements then add more as they become mastered in those areas.", "support": "Forms that are premade for teachers to input individual student data for teams and content areas to drive discussion on specific students and content."}, {"id": 13, "level": "Central Office", "r": ["Most of the time", "Most of the time", "Most of the time", "Sometimes", "Sometimes", "Always", "Sometimes", "Sometimes", "Most of the time", "Sometimes", "Most of the time"], "well": "", "next": "For birth-5- I am going to figure out how we can implement some of these processes now at the early level as we work closely with parents/caregivers and how we can carry it over into kindergarten so the kids are set up early.", "support": "I would love to give the EC teachers time to collaborate and develop lessons that aren\u2019t within our curriculum for our lower and high kiddos to support all learners consistently across the district while teaching the same curriculum."}, {"id": 14, "level": "Elementary School", "r": ["Most of the time", "Sometimes", "Most of the time", "Most of the time", "Most of the time", "Most of the time", "Sometimes", "Sometimes", "Sometimes", "Most of the time", "Most of the time"], "well": "Talking about it, laying the foundation for us to go deeper into this work.", "next": "How we can find the time to do the collaboration necessary to bring consistency and coherence to what students receive in our Tier 1, intervention, EL, SPED, etc.", "support": "This is something I am currently working on with my ESU partner. The continued partnership with [our partner] will be incredibly helpful in continue to make progress in closing the gap."}, {"id": 15, "level": "Middle School", "r": ["Most of the time", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Never", "Sometimes", "Sometimes", "Sometimes"], "well": "The materials are quality and grade level appropriate. Teachers have been provided multiple professional learning opportunities to help improve instruction.", "next": "[our building] will focus on consistent delivering of grade level material while maintaining high expectations.", "support": "Grace and time to improve upon belonging, consistency and coherence. I have some lofty goals, but we will need to start with smaller steps with the big picture in mind. There will be change in the building and help with holding teachers accountable."}, {"id": 16, "level": "Elementary School", "r": ["Sometimes", "Sometimes", "Sometimes", "Most of the time", "Most of the time", "Most of the time", "Most of the time", "Sometimes", "Sometimes", "Sometimes", "Most of the time"], "well": "Consistency- Emphasizing grade-level materials need to be used and utilizing IPG to check and monitor growth in this area.", "next": "Take a deeper dive into coherence. What does a day look like for our students who are the furtherest behind. When they are pulled out of the classroom is it preparing them for the next days tier 1 lesson.", "support": "This was great information and a great starting point to think about areas of growth for our school. I would like to work on consistency at our school and finding ways to give feedback to improve consistency."}, {"id": 17, "level": "Central Office", "r": ["Most of the time", "Sometimes", "Sometimes", "Sometimes", "Most of the time", null, "Sometimes", "Most of the time", "Never", "Sometimes", "Never"], "well": "I think we are slowly improving each year in consistency, exposing all students to core instruction and HQIM", "next": "Coherence - all areas supporting the tier 1 grade level curriculum", "support": "Additional time with school leaders for collaborative conversations and to continue looking at how we can improve structures and practice."}, {"id": 18, "level": "Middle School", "r": ["Most of the time", "Sometimes", "Sometimes", "Most of the time", "Most of the time", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Sometimes", "Most of the time"], "well": "Many structures are in place. Focus on climate, culture, and relationships. Aligned initiatives.", "next": "Consistency-grade level instruction for all Coherence-aligning Tier 1 to Interventions", "support": "PLC\u2019s or similar option to allow time for depts to do work"}, {"id": 19, "level": "Not specified", "r": ["Most of the time", "Most of the time", "Sometimes", "Most of the time", "Most of the time", "Sometimes", "Sometimes", "Sometimes", "Most of the time", "Most of the time", "Most of the time"], "well": "We want all of these things. We have a collective efficacy that we can achieve consistency, coherence, and belonging. However when the year gets started and it\u2019s busy and began it\u2019s become overwhelming we go into survival mode and the coherency and consistency take a backseat.", "next": "Consistency- admin need the support and training to coach teachers so they can ensure the \u201ctwin test\u201d is successful, and academic growth in s happening in all classrooms. Goal 2 coherence- is IXL preteaching needed skills at the right time?", "support": "I want to understand the curriculum and materials available to our teachers. It would make July feedback for students act more effective."}, {"id": 20, "level": "High School", "r": ["Sometimes", "Most of the time", "Never", "Sometimes", "Most of the time", "Most of the time", "Most of the time", "Sometimes", "Sometimes", "Sometimes", "Most of the time"], "well": "I believe we have a lot of structures in place as a district (and at the school building level) to support all of these areas.", "next": "Emphasizing providing the same grade-level assignments for all students with varying supports.", "support": "Time for teachers teaching the same courses to work together to align their courses/assignments/assessments."}, {"id": 21, "level": "Elementary School", "r": ["Most of the time", "Never", "Most of the time", "Most of the time", "Always", "Most of the time", "Sometimes", "Always", "Most of the time", "Most of the time", "Always"], "well": "Developing a sense of belonging has been a focus for several years. Creating a mindset that these students are \u201cour students\u201d.", "next": "Coherence\u2014instruction in the classroom at tier 1 level needs to be given at the intervention/resource level too.", "support": ""}, {"id": 22, "level": "Central Office", "r": ["Sometimes", "Sometimes", "Sometimes", "Sometimes", "Most of the time", "Sometimes", "Sometimes", "Sometimes", "Most of the time", "Most of the time", "Sometimes"], "well": "[the district] has a wealth of core instructional materials that offers built in scaffolding and leveled materials.", "next": "Alignment of instruction across specialty areas and build teacher access and knowledge around the materials currently used by the district.", "support": "Inspiration to motivate and encourage all teachers to create and hold high expectations and opportunities for students to access challenging materials (not limiting)."}, {"id": 23, "level": "Middle School", "r": ["Always", "Most of the time", "Sometimes", "Sometimes", "Most of the time", "Most of the time", "Sometimes", "Sometimes", "Sometimes", "Most of the time", "Most of the time"], "well": "At [our school]- we have belonging when it comes to teachers belonging and feeling bought in and working together. We, according to data, see our students need more belonging, even though we feel strongly that we have great relationships built between staff and students and put a large amount of time and emphasis on this each year. We have access to HQIM consistently and it is being used but how it is being used by students needs to be more consistent. The twin test needs to be stronger in some core content areas. Other core content areas are farther along and are much improved in the area is consistency. Need to move the needle for all.", "next": "Consistency", "support": "Priorities, how do we focus and get good at the most important items and how do we select these most important for our students and staff."}, {"id": 24, "level": "Middle School", "r": ["Always", "Always", "Sometimes", "Sometimes", "Most of the time", "Most of the time", "Most of the time", "Most of the time", "Most of the time", "Most of the time", "Always"], "well": "I think [the district] is consistently working to improve in all of these areas.", "next": "I haven\u2019t had time in my new role to assess what would the most appropriate focus for [our school], but I think the area of adult belonging would be a great place to start. I think taking time to breakdown the roles of each adult working in the school building and showing how each role plays an important part of the big picture in helping students to be proficient at their grade level would be beneficial.", "support": "Personally I need to become more knowledgeable with subject area curriculum so that I can be a better resource for our teaching staff when they are planning personalized learning for our students"}], "stats": {"All": [{"counts": [0, 10, 11, 3], "n": 24, "avg": 2.71}, {"counts": [1, 16, 6, 1], "n": 24, "avg": 2.29}, {"counts": [2, 16, 6, 0], "n": 24, "avg": 2.17}, {"counts": [0, 18, 6, 0], "n": 24, "avg": 2.25}, {"counts": [0, 7, 16, 1], "n": 24, "avg": 2.75}, {"counts": [0, 13, 9, 1], "n": 23, "avg": 2.48}, {"counts": [0, 17, 7, 0], "n": 24, "avg": 2.29}, {"counts": [1, 17, 4, 2], "n": 24, "avg": 2.29}, {"counts": [1, 13, 9, 1], "n": 24, "avg": 2.42}, {"counts": [0, 16, 8, 0], "n": 24, "avg": 2.33}, {"counts": [1, 5, 13, 5], "n": 24, "avg": 2.92}], "Central Office": [{"counts": [0, 4, 3, 0], "n": 7, "avg": 2.43}, {"counts": [0, 6, 1, 0], "n": 7, "avg": 2.14}, {"counts": [0, 5, 2, 0], "n": 7, "avg": 2.29}, {"counts": [0, 7, 0, 0], "n": 7, "avg": 2.0}, {"counts": [0, 3, 4, 0], "n": 7, "avg": 2.57}, {"counts": [0, 5, 0, 1], "n": 6, "avg": 2.33}, {"counts": [0, 7, 0, 0], "n": 7, "avg": 2.0}, {"counts": [0, 5, 2, 0], "n": 7, "avg": 2.29}, {"counts": [1, 4, 2, 0], "n": 7, "avg": 2.14}, {"counts": [0, 6, 1, 0], "n": 7, "avg": 2.14}, {"counts": [1, 2, 4, 0], "n": 7, "avg": 2.43}], "Elementary School": [{"counts": [0, 1, 5, 0], "n": 6, "avg": 2.83}, {"counts": [1, 5, 0, 0], "n": 6, "avg": 1.83}, {"counts": [0, 3, 3, 0], "n": 6, "avg": 2.5}, {"counts": [0, 2, 4, 0], "n": 6, "avg": 2.67}, {"counts": [0, 0, 5, 1], "n": 6, "avg": 3.17}, {"counts": [0, 1, 5, 0], "n": 6, "avg": 2.83}, {"counts": [0, 3, 3, 0], "n": 6, "avg": 2.5}, {"counts": [0, 3, 1, 2], "n": 6, "avg": 2.83}, {"counts": [0, 3, 2, 1], "n": 6, "avg": 2.67}, {"counts": [0, 2, 4, 0], "n": 6, "avg": 2.67}, {"counts": [0, 1, 3, 2], "n": 6, "avg": 3.17}], "Middle School": [{"counts": [0, 1, 2, 2], "n": 5, "avg": 3.2}, {"counts": [0, 3, 1, 1], "n": 5, "avg": 2.6}, {"counts": [0, 5, 0, 0], "n": 5, "avg": 2.0}, {"counts": [0, 4, 1, 0], "n": 5, "avg": 2.2}, {"counts": [0, 2, 3, 0], "n": 5, "avg": 2.6}, {"counts": [0, 2, 3, 0], "n": 5, "avg": 2.6}, {"counts": [0, 3, 2, 0], "n": 5, "avg": 2.4}, {"counts": [1, 3, 1, 0], "n": 5, "avg": 2.0}, {"counts": [0, 3, 2, 0], "n": 5, "avg": 2.4}, {"counts": [0, 3, 2, 0], "n": 5, "avg": 2.4}, {"counts": [0, 1, 2, 2], "n": 5, "avg": 3.2}], "High School": [{"counts": [0, 3, 0, 1], "n": 4, "avg": 2.5}, {"counts": [0, 1, 3, 0], "n": 4, "avg": 2.75}, {"counts": [2, 1, 1, 0], "n": 4, "avg": 1.75}, {"counts": [0, 4, 0, 0], "n": 4, "avg": 2.0}, {"counts": [0, 2, 2, 0], "n": 4, "avg": 2.5}, {"counts": [0, 3, 1, 0], "n": 4, "avg": 2.25}, {"counts": [0, 2, 2, 0], "n": 4, "avg": 2.5}, {"counts": [0, 4, 0, 0], "n": 4, "avg": 2.0}, {"counts": [0, 2, 2, 0], "n": 4, "avg": 2.5}, {"counts": [0, 4, 0, 0], "n": 4, "avg": 2.0}, {"counts": [0, 0, 3, 1], "n": 4, "avg": 3.25}], "Not specified": [{"counts": [0, 1, 1, 0], "n": 2, "avg": 2.5}, {"counts": [0, 1, 1, 0], "n": 2, "avg": 2.5}, {"counts": [0, 2, 0, 0], "n": 2, "avg": 2.0}, {"counts": [0, 1, 1, 0], "n": 2, "avg": 2.5}, {"counts": [0, 0, 2, 0], "n": 2, "avg": 3.0}, {"counts": [0, 2, 0, 0], "n": 2, "avg": 2.0}, {"counts": [0, 2, 0, 0], "n": 2, "avg": 2.0}, {"counts": [0, 2, 0, 0], "n": 2, "avg": 2.0}, {"counts": [0, 1, 1, 0], "n": 2, "avg": 2.5}, {"counts": [0, 1, 1, 0], "n": 2, "avg": 2.5}, {"counts": [0, 1, 1, 0], "n": 2, "avg": 2.5}]}, "counts": {"All": 24, "Central Office": 7, "Elementary School": 6, "Middle School": 5, "High School": 4, "Not specified": 2}};
+const T = {"well": {"q": "What are we doing well related to Belonging, Consistency, or Coherence?", "answered": 22, "blank": 2, "themes": [{"t": "High-quality materials are the clearest, most-named strength", "n": 7, "ids": [4, 11, 15, 16, 17, 22, 23], "d": "More leaders pointed to curriculum and instructional materials than to anything else. The materials are described as in place, quality, and grade-level appropriate \u2014 a resource leaders feel they already have.", "q": [[4, "well", "Consistency in providing HQIM."], [22, "well", "[the district] has a wealth of core instructional materials that offers built in scaffolding and leveled materials."], [15, "well", "The materials are quality and grade level appropriate. Teachers have been provided multiple professional learning opportunities to help improve instruction."]]}, {"t": "Structures and systems already exist to build on", "n": 7, "ids": [2, 5, 7, 9, 14, 18, 20], "d": "A second cluster names existing infrastructure \u2014 MTSS, the improvement plan, aligned initiatives \u2014 as the foundation. Several frame this as scaffolding that is built but not yet fully used.", "q": [[20, "well", "I believe we have a lot of structures in place as a district (and at the school building level) to support all of these areas."], [9, "well", "I think [the district] has some \"bones\" in place that will allow these to happen, it is more about focusing and narrowing what is considered \"priority\"."], [5, "well", "The MTSS process we have developed for ELA in k-4"]]}, {"t": "Belonging is the domain leaders feel furthest along on", "n": 6, "ids": [1, 3, 8, 18, 21, 23], "d": "Belonging is named as a multi-year, sustained focus with real cultural traction \u2014 though one leader draws a sharp line between adult belonging and what student data shows.", "q": [[21, "well", "Developing a sense of belonging has been a focus for several years. Creating a mindset that these students are \u201cour students\u201d."], [8, "well", "We have been targeting Belonging for the past school year and will continue to drive that home. We need to work on the other two more consistently."], [23, "well", "At [our school]- we have belonging when it comes to teachers belonging and feeling bought in and working together. We, according to data, see our students need more belonging, even though we feel strongly that we have great relationships built between staff and students [\u2026]"]]}, {"t": "Progress is real, but leaders describe it as uneven or early", "n": 5, "ids": [10, 12, 14, 19, 24], "d": "Strengths are frequently qualified \u2014 \"pockets,\" \"a good start,\" \"laying the foundation.\" One response names the pattern directly: intent is high in the summer and erodes once the year gets busy.", "q": [[10, "well", "We have pockets of great consistency and belonging led my building leaders that have high expectations for themselves as building leaders."], [19, "well", "We want all of these things. We have a collective efficacy that we can achieve consistency, coherence, and belonging. However when the year gets started and it\u2019s busy and began it\u2019s become overwhelming we go into survival mode and the coherency and consistency take a backseat."], [14, "well", "Talking about it, laying the foundation for us to go deeper into this work."]]}]}, "next": {"q": "What should we focus on next year related to Belonging, Consistency, or Coherence?", "answered": 24, "blank": 0, "themes": [{"t": "Coherence: make intervention and support settings mirror Tier 1", "n": 10, "ids": [2, 3, 7, 11, 16, 17, 18, 19, 21, 22], "d": "The single largest theme. Leaders repeatedly ask what happens to a student outside the core classroom \u2014 in intervention, resource, EL, and SPED settings \u2014 and whether that time is building toward the next Tier 1 lesson.", "q": [[16, "next", "Take a deeper dive into coherence. What does a day look like for our students who are the furtherest behind. When they are pulled out of the classroom is it preparing them for the next days tier 1 lesson."], [21, "next", "Coherence\u2014instruction in the classroom at tier 1 level needs to be given at the intervention/resource level too."], [11, "next", "Coherence between interventions for students. Do they focus on grade level needs or missing baseline skills? Or both?"], [17, "next", "Coherence - all areas supporting the tier 1 grade level curriculum"]]}, {"t": "Consistency: grade-level work for every student, with support", "n": 9, "ids": [1, 5, 8, 9, 10, 15, 18, 20, 23], "d": "The second-largest theme maps directly onto the lowest-rated indicators: the same grade-level assignment for all students, scaffolded rather than substituted, and delivered the same way across classrooms and departments.", "q": [[20, "next", "Emphasizing providing the same grade-level assignments for all students with varying supports."], [5, "next", "Continue to reinforce the need to be teaching grade level content and increase the number of students doing the thinking."], [8, "next", "We need to focus on Consistency. It's difficult in the high school setting with so many departments, but we are committed to figuring out what works best for our students."]]}, {"t": "Shift from having the materials to using them well", "n": 5, "ids": [4, 5, 9, 19, 22], "d": "Several leaders explicitly separate access from execution. The materials are not the constraint; how and with whom they are used is.", "q": [[9, "next", "I think strong Tier 1 instruction and access is a good and important first step. Most content areas have HQIM, the focus needs to be more on how we are using it in all spaces, with all kids."], [4, "next", "Ensuring the HQIM are being used."], [22, "next", "Alignment of instruction across specialty areas and build teacher access and knowledge around the materials currently used by the district."]]}, {"t": "Fewer, clearer priorities and a shared preK\u201312 vision", "n": 5, "ids": [6, 7, 12, 13, 24], "d": "A recurring ask for narrowing: a small number of attainable goals, defined together across levels rather than building by building.", "q": [[6, "next", "Opportunity for administrative teams to work together to develop preK -12 vision for implementing belonging, consistency and coherence goals."], [12, "next", "Attainable goals that are specific so teachers can focus one one or a few improvements then add more as they become mastered in those areas."], [7, "next", "Simplifying and focusing on cherrnce around tier 1"]]}]}, "support": {"q": "What support do you want or need to improve students' access to quality instruction?", "answered": 21, "blank": 3, "themes": [{"t": "Protected time for structured collaboration", "n": 8, "ids": [3, 7, 10, 13, 15, 17, 18, 20], "d": "By a wide margin the most requested support. Time is asked for specifically \u2014 vertical alignment, same-course teams, department work \u2014 and several name a PLC structure as the vehicle.", "q": [[20, "support", "Time for teachers teaching the same courses to work together to align their courses/assignments/assessments."], [18, "support", "PLC\u2019s or similar option to allow time for depts to do work"], [7, "support", "A team that is moving in the same direction and open to feedback. I also believe considering moving back to a PLC structure could help us become more consistent, coherent, and improve a sense of belonging."]]}, {"t": "Calibration, walkthroughs, and the skill of giving feedback", "n": 4, "ids": [5, 9, 11, 16], "d": "Leaders ask to be normed on what quality looks like before they are expected to coach toward it \u2014 a direct match to the walkthrough indicator, which drew the widest spread of ratings.", "q": [[11, "support", "I would like my IF to do walk throughs with me to help me calibrate what I am seeing in classrooms to what I should be seeing in every lesson in every classroom."], [16, "support", "[\u2026] I would like to work on consistency at our school and finding ways to give feedback to improve consistency."], [9, "support", "I think more visibility and instructional mindset from leaders both building and teacher leaders can help to work with strong Tier 1 instruction."]]}, {"t": "Teacher buy-in and mindset about grade-level work", "n": 4, "ids": [4, 8, 15, 22], "d": "Where materials are in place, the named barrier is belief \u2014 particularly the instinct to supplement or lower the ceiling for students who are behind.", "q": [[4, "support", "Getting teachers to let go of thinking they need to supplement the materials."], [8, "support", "We have the materials and curriculum. We need teacher buy in."], [22, "support", "Inspiration to motivate and encourage all teachers to create and hold high expectations and opportunities for students to access challenging materials (not limiting)."]]}, {"t": "Leaders' own working knowledge of the curriculum", "n": 3, "ids": [2, 19, 24], "d": "A candid, self-directed ask: several leaders say they cannot yet support planning or give useful feedback because they do not know the materials well enough themselves.", "q": [[24, "support", "Personally I need to become more knowledgeable with subject area curriculum so that I can be a better resource for our teaching staff when they are planning personalized learning for our students"], [19, "support", "I want to understand the curriculum and materials available to our teachers. It would make July feedback for students act more effective."], [2, "support", "Best way for staff and paras to support supplemental materials within our curriculum to support coherence when you may not have a full understanding of all materials available at each grade level."]]}, {"t": "Narrower priorities and ready-made tools", "n": 3, "ids": [5, 12, 23], "d": "A smaller cluster asks for the work to arrive pre-built \u2014 concrete action steps, prepared data forms \u2014 and for help deciding what to leave out.", "q": [[23, "support", "Priorities, how do we focus and get good at the most important items and how do we select these most important for our students and staff."], [12, "support", "Forms that are premade for teachers to input individual student data for teams and content areas to drive discussion on specific students and content."], [5, "support", "Action steps around Consistency with interventions and supports."]]}]}};
+const COL = ['var(--s1)','var(--s2)','var(--s3)','var(--s4)'];
+const DOMAINS = ['Belonging','Consistency','Coherence'];
+const DCOL = {Belonging:'var(--coral)',Consistency:'var(--green)',Coherence:'var(--navy)'};
+const esc = s => (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+/* ---------- helpers ---------- */
+function pooled(st){ const c=[0,0,0,0]; st.forEach(s=>s.counts.forEach((v,i)=>c[i]+=v)); return c; }
+function avgOf(c){ const n=c.reduce((a,b)=>a+b,0); return n? c.reduce((a,b,i)=>a+b*(i+1),0)/n : null; }
+function domStats(st,dom){ return st.filter((_,i)=>D.inds[i].domain===dom); }
+function barHTML(counts,n,showLabels){
+  return counts.map((v,i)=> v===0 ? '' :
+    `<div style="width:${(v/n*100).toFixed(3)}%;background:${COL[i]}" title="${D.scale[i]}: ${v} of ${n} (${Math.round(v/n*100)}%)">`
+    + (showLabels && v/n>0.09 ? `<span>${v}</span>` : '') + '</div>').join('');
+}
+function legendHTML(){ return D.scale.map((s,i)=>`<span><i style="background:${COL[i]}"></i>${s}</span>`).join(''); }
+
+/* ---------- tabs ---------- */
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
+  document.querySelectorAll('.panel').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on'); document.getElementById('p-'+b.dataset.p).classList.add('on');
+  window.scrollTo({top:0,behavior:'smooth'});
+});
+['legend1','legend2','legend3'].forEach(id=>document.getElementById(id).innerHTML=legendHTML());
+
+/* ---------- overview ---------- */
+const ALL = D.stats.All;
+const totalCounts = pooled(ALL), totalN = totalCounts.reduce((a,b)=>a+b,0);
+document.getElementById('mN').textContent = D.counts.All;
+document.getElementById('mR').textContent = totalN;
+document.getElementById('mO').textContent = T.well.answered + T.next.answered + T.support.answered;
+document.getElementById('totalBar').innerHTML = barHTML(totalCounts,totalN,true);
+
+const DESC = {
+ Belonging:'Structures that build collective knowledge of students, specialist collaboration, and clear growth goals.',
+ Consistency:'Grade-level work for all, curriculum use, team commitments, named practices, and non-evaluative walkthroughs.',
+ Coherence:'Aligned learning spaces, intervention materials matched to core, and focused schoolwide goals.'
+};
+document.getElementById('domainCards').innerHTML = DOMAINS.map(d=>{
+  const st = domStats(ALL,d), c = pooled(st), a = avgOf(c);
+  return `<div class="card pad dcard ${d}">
+    <h3>${d}</h3>
+    <div style="font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);font-family:var(--head)">${st.length} indicators &middot; ${c.reduce((x,y)=>x+y,0)} ratings</div>
+    <div class="sc">${a.toFixed(2)}<span> / 4.00</span></div>
+    <div class="track"><i style="width:${((a-1)/3*100).toFixed(1)}%;background:${DCOL[d]}"></i></div>
+    <p>${DESC[d]}</p></div>`;
+}).join('');
+
+/* findings computed live from the data */
+const idx = ALL.map((s,i)=>({...s,...D.inds[i],i}));
+const sorted = [...idx].sort((a,b)=>b.avg-a.avg);
+const hi = sorted[0], lo = sorted[sorted.length-1];
+const someModal = idx.filter(s=>s.counts[1]===Math.max(...s.counts)).length;
+const lowShare = totalCounts[0]+totalCounts[1];
+const zeroAlways = idx.filter(s=>s.counts[3]===0);
+const gl = idx.find(s=>s.text.startsWith('Every student works on grade-level'));
+const cohPair = idx.filter(s=>s.domain==='Coherence' && s!==hi);
+const cohPairAvg = avgOf(pooled(cohPair));
+const overallAvg = avgOf(totalCounts);
+const cohAvg = avgOf(pooled(domStats(ALL,'Coherence')));
+
+const FIND = [
+ ['The baseline reads as emerging, not established.',
+  `<b>${lowShare} of ${totalN} ratings (${Math.round(lowShare/totalN*100)}%)</b> landed at "Never" or "Sometimes," and "Sometimes" was the single most common answer on <b>${someModal} of the 11 indicators</b>. No domain averaged above ${cohAvg.toFixed(2)} out of 4.00. Leaders are describing conditions that exist in places rather than practices that hold everywhere.`],
+ ['Leaders set goals; the goals are not about grade level.',
+  `The highest-rated indicator in the entire assessment is <b>"${esc(hi.text.replace(/\.$/,""))}" (${hi.avg.toFixed(2)})</b>. The lowest is <b>"${esc(lo.text.replace(/\.$/,""))}" (${lo.avg.toFixed(2)})</b>. The habit of narrowing to a few schoolwide priorities is the strongest muscle in the system &mdash; but those priorities are not currently expressed as grade-level growth targets.`],
+ ['The most unanimous judgment is about grade-level work.',
+  `On "${esc(gl.text.replace(/\.$/,""))}," <b>${gl.counts[1]} of ${gl.n} leaders chose "Sometimes"</b> &mdash; and not one selected "Always" or "Never." This is the tightest consensus anywhere in the assessment, and it points at the core Opportunity Myth finding: access to grade-appropriate work is the constraint, not effort or intent.`],
+ ['Coherence looks strongest on paper and weakest in practice.',
+  `Coherence carries the highest domain average (<b>${cohAvg.toFixed(2)}</b>), but that is driven almost entirely by the goal-setting indicator. The two coherence items about aligning instruction across settings average <b>${cohPairAvg.toFixed(2)}</b>, below the assessment-wide average of ${overallAvg.toFixed(2)}. Coherence is also the theme leaders name most often when asked what to focus on next year.`],
+ ['Four indicators drew no "Always" ratings at all.',
+  `Not a single leader marked "Always" on: ${zeroAlways.map(s=>'<b>'+esc(s.text.replace(/\.$/,''))+'</b>').join('; ')}. These four cluster tightly around what students who are behind actually receive.`]
+];
+document.getElementById('findings').innerHTML = FIND.map((f,i)=>
+ `<div class="finding"><div class="num">${i+1}</div><div><h4>${f[0]}</h4><p>${f[1]}</p></div></div>`).join('');
+
+/* ---------- baseline panel ---------- */
+let curLevel='All', curSort='domain';
+const levelOpts = ['All',...D.levels];
+function segHTML(sel){ return levelOpts.map(L=>`<button data-l="${L}" class="${L===sel?'on':''}">${L==='All'?'All leaders':L} (${D.counts[L]})</button>`).join(''); }
+function renderBars(){
+  const st = D.stats[curLevel];
+  const rows = st.map((s,i)=>({...s,...D.inds[i]})).filter(s=>s.n>0);
+  let html='';
+  if(curSort==='domain'){
+    DOMAINS.forEach(d=>{
+      const g = rows.filter(r=>r.domain===d); if(!g.length) return;
+      const a = avgOf(pooled(g));
+      html += `<div class="dgroup"><h3>${d}<em>domain average ${a.toFixed(2)} &middot; ${g.length} indicator${g.length>1?'s':''}</em></h3>` + g.map(rowHTML).join('') + '</div>';
+    });
+  } else {
+    const g=[...rows].sort((a,b)=> curSort==='desc'? b.avg-a.avg : a.avg-b.avg);
+    html = `<div class="dgroup"><h3>${curSort==='desc'?'Highest rated first':'Lowest rated first'}<em>${g.length} indicators &middot; ${curLevel==='All'?'all leaders':curLevel}</em></h3>` + g.map(rowHTML).join('') + '</div>';
+  }
+  document.getElementById('bars').innerHTML = html;
+  const n = D.counts[curLevel];
+  document.getElementById('levelNote').innerHTML = curLevel==='All' ? '' :
+   `<div class="note"><b>Small group.</b> This view shows ${n} respondent${n>1?'s':''}. With a group this size a single answer shifts a bar by ${Math.round(100/n)} percentage points, so read these as directional signals, not as differences between levels.</div>`;
+}
+function rowHTML(s){
+  return `<div class="row">
+   <div class="lab">${esc(s.text)}<small>${s.domain} &middot; ${s.n} response${s.n>1?'s':''}</small></div>
+   <div class="bar">${barHTML(s.counts,s.n,true)}</div>
+   <div class="avg">${s.avg.toFixed(2)}<small>avg / 4</small></div></div>`;
+}
+document.getElementById('levelSeg').innerHTML = segHTML('All');
+document.getElementById('levelSeg').onclick = e=>{ if(!e.target.dataset.l) return;
+  curLevel=e.target.dataset.l;
+  document.querySelectorAll('#levelSeg button').forEach(b=>b.classList.toggle('on',b.dataset.l===curLevel));
+  renderBars(); };
+document.getElementById('sortSeg').onclick = e=>{ if(!e.target.dataset.s) return;
+  curSort=e.target.dataset.s;
+  document.querySelectorAll('#sortSeg button').forEach(b=>b.classList.toggle('on',b.dataset.s===curSort));
+  renderBars(); };
+renderBars();
+
+/* ---------- themes ---------- */
+const QKEY = {well:'Doing well',next:'Focus next year',support:'Support needed'};
+document.getElementById('themeBlocks').innerHTML = ['well','next','support'].map(k=>{
+  const b = T[k];
+  return `<div style="margin-bottom:34px">
+   <div class="tq"><h3>${esc(b.q)}</h3><p>${b.answered} of ${D.counts.All} leaders responded${b.blank?` &middot; ${b.blank} left blank`:''}</p></div>
+   <div class="tbody">${b.themes.map(t=>`
+     <div class="theme"><div class="th">
+       <span class="pill">${t.n} of ${D.counts.All}</span>
+       <div><h4>${esc(t.t)}</h4><p class="desc">${esc(t.d)}</p></div>
+       <span class="chev">Quotes +</span></div>
+       <div class="quotes">${t.q.map(q=>`<blockquote>${esc(q[2])}<cite>${lvlOf(q[0])} &middot; ${QKEY[q[1]]}</cite></blockquote>`).join('')}</div>
+     </div>`).join('')}</div></div>`;
+}).join('');
+function lvlOf(id){ return D.resp.find(r=>r.id===id).level; }
+document.querySelectorAll('.theme .th').forEach(h=>h.onclick=()=>{
+  const t=h.parentElement; t.classList.toggle('open');
+  h.querySelector('.chev').textContent = t.classList.contains('open')?'Quotes −':'Quotes +';
+});
+
+/* ---------- responses ---------- */
+let curLevel2='All', curQ='';
+document.getElementById('levelSeg2').innerHTML = segHTML('All');
+document.getElementById('levelSeg2').onclick = e=>{ if(!e.target.dataset.l) return;
+  curLevel2=e.target.dataset.l;
+  document.querySelectorAll('#levelSeg2 button').forEach(b=>b.classList.toggle('on',b.dataset.l===curLevel2));
+  renderResp(); };
+document.getElementById('q').oninput = e=>{ curQ=e.target.value.toLowerCase().trim(); renderResp(); };
+function renderResp(){
+  const list = D.resp.filter(r=> (curLevel2==='All'||r.level===curLevel2) &&
+    (!curQ || (r.well+' '+r.next+' '+r.support).toLowerCase().includes(curQ)));
+  document.getElementById('noHits').classList.toggle('hidden', list.length>0);
+  document.getElementById('respList').innerHTML = list.map(r=>`
+   <div class="card rcard"><div class="rhead">
+     <span class="chip">${r.level}</span><span class="rid">Respondent ${r.id}</span>
+     <span class="mini" title="Ratings in indicator order">${r.r.map((v,i)=>
+       `<i style="background:${v?COL[D.scale.indexOf(v)]:'#DDE2E6'}" title="${esc(D.inds[i].text)} — ${v||'no answer'}"></i>`).join('')}</span>
+   </div>
+   ${[['well','What we are doing well'],['next','What to focus on next year'],['support','Support wanted or needed']].map(([k,lab])=>
+     `<div class="qa"><div class="k">${lab}</div><div class="v${r[k]?'':' empty'}">${r[k]?esc(r[k]):'No response'}</div></div>`).join('')}
+   </div>`).join('');
+}
+renderResp();
+</script></body></html>

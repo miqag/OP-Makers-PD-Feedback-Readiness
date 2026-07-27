@@ -1,0 +1,109 @@
+<header><div class="wrap">
+ <div class="eyebrow">Baseline Assessment &amp; Session Reflections</div>
+ <h1>Leader Feedback on Opportunity Makers Readiness</h1>
+ <p class="sub">How district and building leaders rated their current conditions across Belonging, Consistency, and Coherence &mdash; and what they said in their own words about what is working, what should come next, and what support they need.</p>
+ <div class="metastrip">
+  <div>Leaders responding<b id="mN">24</b></div>
+  <div>Indicators rated<b>11</b></div>
+  <div>Individual ratings<b id="mR">263</b></div>
+  <div>Open-ended responses<b id="mO">67</b></div>
+ </div>
+</div></header>
+
+<nav class="tabs"><div class="wrap">
+ <button class="tab on" data-p="overview">Overview</button>
+ <button class="tab" data-p="baseline">Baseline Assessment</button>
+ <button class="tab" data-p="themes">Open-Ended Themes</button>
+ <button class="tab" data-p="responses">All Responses</button>
+ <button class="tab" data-p="method">Method &amp; Notes</button>
+</div></nav>
+
+<main><div class="wrap">
+
+<!-- ============ OVERVIEW ============ -->
+<section class="panel on" id="p-overview">
+ <div class="rule"></div>
+ <h2 class="big">Where leaders say they stand today</h2>
+ <p class="lede">Each domain below is the average of its indicators on a four-point scale, where Never = 1, Sometimes = 2, Most of the time = 3, and Always = 4. All three domains sit between "Sometimes" and "Most of the time."</p>
+ <div class="grid g3" id="domainCards"></div>
+
+ <div style="height:38px"></div>
+ <div class="rule"></div>
+ <h2 class="big">What stands out in the data</h2>
+ <p class="lede">Every statement below is drawn directly from the 24 responses. Nothing is estimated or extrapolated.</p>
+ <div class="card pad"><div id="findings"></div></div>
+
+ <div style="height:38px"></div>
+ <div class="rule"></div>
+ <h2 class="big">The full distribution</h2>
+ <p class="lede">All ratings across all 11 indicators, pooled.</p>
+ <div class="card pad">
+   <div class="bar" id="totalBar" style="height:44px"></div>
+   <div class="legend" id="legend1" style="margin-bottom:0"></div>
+ </div>
+</section>
+
+<!-- ============ BASELINE ============ -->
+<section class="panel" id="p-baseline">
+ <div class="rule"></div>
+ <h2 class="big">Baseline Assessment, indicator by indicator</h2>
+ <p class="lede">Each bar shows how the group distributed across the four response options. Hover any segment for the exact count. Use the controls to filter by level or to re-rank indicators from strongest to weakest.</p>
+
+ <div class="controls">
+  <div class="ctl"><label>Filter by level</label><div class="seg" id="levelSeg"></div></div>
+  <div class="ctl"><label>Arrange</label><div class="seg" id="sortSeg">
+    <button class="on" data-s="domain">By domain</button>
+    <button data-s="desc">Strongest first</button>
+    <button data-s="asc">Weakest first</button>
+  </div></div>
+ </div>
+ <div class="legend" id="legend2"></div>
+ <div id="levelNote"></div>
+ <div style="height:20px"></div>
+ <div class="card pad" id="bars"></div>
+</section>
+
+<!-- ============ THEMES ============ -->
+<section class="panel" id="p-themes">
+ <div class="rule"></div>
+ <h2 class="big">Trends in the open-ended feedback</h2>
+ <p class="lede">Every written response was read and coded. Counts show how many of the 24 leaders raised each theme; a single response can carry more than one theme. Click a theme to read the responses behind it.</p>
+ <div id="themeBlocks"></div>
+</section>
+
+<!-- ============ RESPONSES ============ -->
+<section class="panel" id="p-responses">
+ <div class="rule"></div>
+ <h2 class="big">All responses, verbatim</h2>
+ <p class="lede">Complete written feedback with names removed. The eleven small blocks on each card show that leader's ratings in indicator order, colored by response.</p>
+ <div class="controls" style="margin-bottom:20px">
+  <div class="ctl" style="flex:1;min-width:260px"><label>Search the text</label><input class="search" id="q" placeholder="e.g. tier 1, time, walkthrough, buy in"></div>
+  <div class="ctl"><label>Level</label><div class="seg" id="levelSeg2"></div></div>
+ </div>
+ <div class="legend" id="legend3"></div>
+ <div id="respList"></div>
+ <p id="noHits" class="hidden" style="color:var(--muted)">No responses match that search.</p>
+</section>
+
+<!-- ============ METHOD ============ -->
+<section class="panel" id="p-method">
+ <div class="rule"></div>
+ <h2 class="big">Method &amp; notes</h2>
+ <div class="card pad" style="max-width:80ch">
+  <h4 style="color:var(--navy);font-size:16px;margin-bottom:6px">Source</h4>
+  <p style="margin-top:0;color:var(--muted)">A single post-session reflection form completed by 24 leaders. The form contained 11 Baseline Assessment indicators grouped under Belonging (3), Consistency (5), and Coherence (3), plus three open-ended questions.</p>
+  <h4 style="color:var(--navy);font-size:16px;margin:22px 0 6px">Scoring</h4>
+  <p style="margin-top:0;color:var(--muted)">Averages convert the four response options to points: Never = 1, Sometimes = 2, Most of the time = 3, Always = 4. Averages are used only to rank and compare indicators; the stacked bars remain the primary read, since an average can hide a split group.</p>
+  <h4 style="color:var(--navy);font-size:16px;margin:22px 0 6px">Completeness</h4>
+  <p style="margin-top:0;color:var(--muted)">One rating was left blank (Consistency &mdash; "In team meetings, teachers commit to concrete actions for individual students"), so that indicator reflects 23 responses rather than 24. Two leaders left the "doing well" question blank and three left the "support needed" question blank. Blanks are excluded from averages, never counted as zero.</p>
+  <h4 style="color:var(--navy);font-size:16px;margin:22px 0 6px">Levels</h4>
+  <p style="margin-top:0;color:var(--muted)">Levels are as leaders self-reported them. Subgroups are small &mdash; between 2 and 7 people &mdash; so level comparisons are directional only and should not be read as significant differences. One leader left the level blank and one identified by a specific building role; both are grouped as "Not specified."</p>
+  <h4 style="color:var(--navy);font-size:16px;margin:22px 0 6px">Anonymity</h4>
+  <p style="margin-top:0;color:var(--muted)">Respondent names have been removed. Within quotes, references to the district, individual buildings, and named colleagues are replaced with bracketed placeholders. Quotes are otherwise reproduced exactly as written, including original spelling.</p>
+  <h4 style="color:var(--navy);font-size:16px;margin:22px 0 6px">Theme coding</h4>
+  <p style="margin-top:0;color:var(--muted)">Themes were derived from the responses themselves rather than applied from a preset list. Because responses often address more than one idea, theme counts sum to more than the number of respondents.</p>
+ </div>
+</section>
+
+</div></main>
+<footer><div class="wrap">Based solely on the 24 submitted reflection forms. Ratings, counts, and quotes are reproduced from the source responses; no data has been supplemented or estimated.</div></footer>

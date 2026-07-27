@@ -1,0 +1,416 @@
+{
+ "well": {
+  "q": "What are we doing well related to Belonging, Consistency, or Coherence?",
+  "answered": 22,
+  "blank": 2,
+  "themes": [
+   {
+    "t": "High-quality materials are the clearest, most-named strength",
+    "n": 7,
+    "ids": [
+     4,
+     11,
+     15,
+     16,
+     17,
+     22,
+     23
+    ],
+    "d": "More leaders pointed to curriculum and instructional materials than to anything else. The materials are described as in place, quality, and grade-level appropriate \u2014 a resource leaders feel they already have.",
+    "q": [
+     [
+      4,
+      "well",
+      "Consistency in providing HQIM."
+     ],
+     [
+      22,
+      "well",
+      "[the district] has a wealth of core instructional materials that offers built in scaffolding and leveled materials."
+     ],
+     [
+      15,
+      "well",
+      "The materials are quality and grade level appropriate. Teachers have been provided multiple professional learning opportunities to help improve instruction."
+     ]
+    ]
+   },
+   {
+    "t": "Structures and systems already exist to build on",
+    "n": 7,
+    "ids": [
+     2,
+     5,
+     7,
+     9,
+     14,
+     18,
+     20
+    ],
+    "d": "A second cluster names existing infrastructure \u2014 MTSS, the improvement plan, aligned initiatives \u2014 as the foundation. Several frame this as scaffolding that is built but not yet fully used.",
+    "q": [
+     [
+      20,
+      "well",
+      "I believe we have a lot of structures in place as a district (and at the school building level) to support all of these areas."
+     ],
+     [
+      9,
+      "well",
+      "I think [the district] has some \"bones\" in place that will allow these to happen, it is more about focusing and narrowing what is considered \"priority\"."
+     ],
+     [
+      5,
+      "well",
+      "The MTSS process we have developed for ELA in k-4"
+     ]
+    ]
+   },
+   {
+    "t": "Belonging is the domain leaders feel furthest along on",
+    "n": 6,
+    "ids": [
+     1,
+     3,
+     8,
+     18,
+     21,
+     23
+    ],
+    "d": "Belonging is named as a multi-year, sustained focus with real cultural traction \u2014 though one leader draws a sharp line between adult belonging and what student data shows.",
+    "q": [
+     [
+      21,
+      "well",
+      "Developing a sense of belonging has been a focus for several years. Creating a mindset that these students are \u201cour students\u201d."
+     ],
+     [
+      8,
+      "well",
+      "We have been targeting Belonging for the past school year and will continue to drive that home. We need to work on the other two more consistently."
+     ],
+     [
+      23,
+      "well",
+      "At [our school]- we have belonging when it comes to teachers belonging and feeling bought in and working together. We, according to data, see our students need more belonging, even though we feel strongly that we have great relationships built between staff and students [\u2026]"
+     ]
+    ]
+   },
+   {
+    "t": "Progress is real, but leaders describe it as uneven or early",
+    "n": 5,
+    "ids": [
+     10,
+     12,
+     14,
+     19,
+     24
+    ],
+    "d": "Strengths are frequently qualified \u2014 \"pockets,\" \"a good start,\" \"laying the foundation.\" One response names the pattern directly: intent is high in the summer and erodes once the year gets busy.",
+    "q": [
+     [
+      10,
+      "well",
+      "We have pockets of great consistency and belonging led my building leaders that have high expectations for themselves as building leaders."
+     ],
+     [
+      19,
+      "well",
+      "We want all of these things. We have a collective efficacy that we can achieve consistency, coherence, and belonging. However when the year gets started and it\u2019s busy and began it\u2019s become overwhelming we go into survival mode and the coherency and consistency take a backseat."
+     ],
+     [
+      14,
+      "well",
+      "Talking about it, laying the foundation for us to go deeper into this work."
+     ]
+    ]
+   }
+  ]
+ },
+ "next": {
+  "q": "What should we focus on next year related to Belonging, Consistency, or Coherence?",
+  "answered": 24,
+  "blank": 0,
+  "themes": [
+   {
+    "t": "Coherence: make intervention and support settings mirror Tier 1",
+    "n": 10,
+    "ids": [
+     2,
+     3,
+     7,
+     11,
+     16,
+     17,
+     18,
+     19,
+     21,
+     22
+    ],
+    "d": "The single largest theme. Leaders repeatedly ask what happens to a student outside the core classroom \u2014 in intervention, resource, EL, and SPED settings \u2014 and whether that time is building toward the next Tier 1 lesson.",
+    "q": [
+     [
+      16,
+      "next",
+      "Take a deeper dive into coherence. What does a day look like for our students who are the furtherest behind. When they are pulled out of the classroom is it preparing them for the next days tier 1 lesson."
+     ],
+     [
+      21,
+      "next",
+      "Coherence\u2014instruction in the classroom at tier 1 level needs to be given at the intervention/resource level too."
+     ],
+     [
+      11,
+      "next",
+      "Coherence between interventions for students. Do they focus on grade level needs or missing baseline skills? Or both?"
+     ],
+     [
+      17,
+      "next",
+      "Coherence - all areas supporting the tier 1 grade level curriculum"
+     ]
+    ]
+   },
+   {
+    "t": "Consistency: grade-level work for every student, with support",
+    "n": 9,
+    "ids": [
+     1,
+     5,
+     8,
+     9,
+     10,
+     15,
+     18,
+     20,
+     23
+    ],
+    "d": "The second-largest theme maps directly onto the lowest-rated indicators: the same grade-level assignment for all students, scaffolded rather than substituted, and delivered the same way across classrooms and departments.",
+    "q": [
+     [
+      20,
+      "next",
+      "Emphasizing providing the same grade-level assignments for all students with varying supports."
+     ],
+     [
+      5,
+      "next",
+      "Continue to reinforce the need to be teaching grade level content and increase the number of students doing the thinking."
+     ],
+     [
+      8,
+      "next",
+      "We need to focus on Consistency. It's difficult in the high school setting with so many departments, but we are committed to figuring out what works best for our students."
+     ]
+    ]
+   },
+   {
+    "t": "Shift from having the materials to using them well",
+    "n": 5,
+    "ids": [
+     4,
+     5,
+     9,
+     19,
+     22
+    ],
+    "d": "Several leaders explicitly separate access from execution. The materials are not the constraint; how and with whom they are used is.",
+    "q": [
+     [
+      9,
+      "next",
+      "I think strong Tier 1 instruction and access is a good and important first step. Most content areas have HQIM, the focus needs to be more on how we are using it in all spaces, with all kids."
+     ],
+     [
+      4,
+      "next",
+      "Ensuring the HQIM are being used."
+     ],
+     [
+      22,
+      "next",
+      "Alignment of instruction across specialty areas and build teacher access and knowledge around the materials currently used by the district."
+     ]
+    ]
+   },
+   {
+    "t": "Fewer, clearer priorities and a shared preK\u201312 vision",
+    "n": 5,
+    "ids": [
+     6,
+     7,
+     12,
+     13,
+     24
+    ],
+    "d": "A recurring ask for narrowing: a small number of attainable goals, defined together across levels rather than building by building.",
+    "q": [
+     [
+      6,
+      "next",
+      "Opportunity for administrative teams to work together to develop preK -12 vision for implementing belonging, consistency and coherence goals."
+     ],
+     [
+      12,
+      "next",
+      "Attainable goals that are specific so teachers can focus one one or a few improvements then add more as they become mastered in those areas."
+     ],
+     [
+      7,
+      "next",
+      "Simplifying and focusing on cherrnce around tier 1"
+     ]
+    ]
+   }
+  ]
+ },
+ "support": {
+  "q": "What support do you want or need to improve students' access to quality instruction?",
+  "answered": 21,
+  "blank": 3,
+  "themes": [
+   {
+    "t": "Protected time for structured collaboration",
+    "n": 8,
+    "ids": [
+     3,
+     7,
+     10,
+     13,
+     15,
+     17,
+     18,
+     20
+    ],
+    "d": "By a wide margin the most requested support. Time is asked for specifically \u2014 vertical alignment, same-course teams, department work \u2014 and several name a PLC structure as the vehicle.",
+    "q": [
+     [
+      20,
+      "support",
+      "Time for teachers teaching the same courses to work together to align their courses/assignments/assessments."
+     ],
+     [
+      18,
+      "support",
+      "PLC\u2019s or similar option to allow time for depts to do work"
+     ],
+     [
+      7,
+      "support",
+      "A team that is moving in the same direction and open to feedback. I also believe considering moving back to a PLC structure could help us become more consistent, coherent, and improve a sense of belonging."
+     ]
+    ]
+   },
+   {
+    "t": "Calibration, walkthroughs, and the skill of giving feedback",
+    "n": 4,
+    "ids": [
+     5,
+     9,
+     11,
+     16
+    ],
+    "d": "Leaders ask to be normed on what quality looks like before they are expected to coach toward it \u2014 a direct match to the walkthrough indicator, which drew the widest spread of ratings.",
+    "q": [
+     [
+      11,
+      "support",
+      "I would like my IF to do walk throughs with me to help me calibrate what I am seeing in classrooms to what I should be seeing in every lesson in every classroom."
+     ],
+     [
+      16,
+      "support",
+      "[\u2026] I would like to work on consistency at our school and finding ways to give feedback to improve consistency."
+     ],
+     [
+      9,
+      "support",
+      "I think more visibility and instructional mindset from leaders both building and teacher leaders can help to work with strong Tier 1 instruction."
+     ]
+    ]
+   },
+   {
+    "t": "Teacher buy-in and mindset about grade-level work",
+    "n": 4,
+    "ids": [
+     4,
+     8,
+     15,
+     22
+    ],
+    "d": "Where materials are in place, the named barrier is belief \u2014 particularly the instinct to supplement or lower the ceiling for students who are behind.",
+    "q": [
+     [
+      4,
+      "support",
+      "Getting teachers to let go of thinking they need to supplement the materials."
+     ],
+     [
+      8,
+      "support",
+      "We have the materials and curriculum. We need teacher buy in."
+     ],
+     [
+      22,
+      "support",
+      "Inspiration to motivate and encourage all teachers to create and hold high expectations and opportunities for students to access challenging materials (not limiting)."
+     ]
+    ]
+   },
+   {
+    "t": "Leaders' own working knowledge of the curriculum",
+    "n": 3,
+    "ids": [
+     2,
+     19,
+     24
+    ],
+    "d": "A candid, self-directed ask: several leaders say they cannot yet support planning or give useful feedback because they do not know the materials well enough themselves.",
+    "q": [
+     [
+      24,
+      "support",
+      "Personally I need to become more knowledgeable with subject area curriculum so that I can be a better resource for our teaching staff when they are planning personalized learning for our students"
+     ],
+     [
+      19,
+      "support",
+      "I want to understand the curriculum and materials available to our teachers. It would make July feedback for students act more effective."
+     ],
+     [
+      2,
+      "support",
+      "Best way for staff and paras to support supplemental materials within our curriculum to support coherence when you may not have a full understanding of all materials available at each grade level."
+     ]
+    ]
+   },
+   {
+    "t": "Narrower priorities and ready-made tools",
+    "n": 3,
+    "ids": [
+     5,
+     12,
+     23
+    ],
+    "d": "A smaller cluster asks for the work to arrive pre-built \u2014 concrete action steps, prepared data forms \u2014 and for help deciding what to leave out.",
+    "q": [
+     [
+      23,
+      "support",
+      "Priorities, how do we focus and get good at the most important items and how do we select these most important for our students and staff."
+     ],
+     [
+      12,
+      "support",
+      "Forms that are premade for teachers to input individual student data for teams and content areas to drive discussion on specific students and content."
+     ],
+     [
+      5,
+      "support",
+      "Action steps around Consistency with interventions and supports."
+     ]
+    ]
+   }
+  ]
+ }
+}

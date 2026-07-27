@@ -1,0 +1,1336 @@
+{
+ "inds": [
+  {
+   "col": 3,
+   "domain": "Belonging",
+   "text": "The school has structures and practices that build collective knowledge of students."
+  },
+  {
+   "col": 4,
+   "domain": "Belonging",
+   "text": "Specialists collaborate with core classroom teachers to support students' individual needs."
+  },
+  {
+   "col": 5,
+   "domain": "Belonging",
+   "text": "The school has clear goals for growth that put students on track to reach grade level over time."
+  },
+  {
+   "col": 6,
+   "domain": "Consistency",
+   "text": "Every student works on grade-level work, with varying degrees of support and scaffolding as needed."
+  },
+  {
+   "col": 7,
+   "domain": "Consistency",
+   "text": "Most teachers use the adopted curriculum most of the time."
+  },
+  {
+   "col": 8,
+   "domain": "Consistency",
+   "text": "In team meetings, teachers commit to concrete actions for individual students."
+  },
+  {
+   "col": 9,
+   "domain": "Consistency",
+   "text": "Leaders name and reinforce foundational instructional practices to minimize variation between classrooms."
+  },
+  {
+   "col": 10,
+   "domain": "Consistency",
+   "text": "Leaders do regular, non-evaluative classroom walk-throughs and provide focused feedback."
+  },
+  {
+   "col": 11,
+   "domain": "Coherence",
+   "text": "All learning spaces \u2013 core classes, intervention, tutoring, and extended time \u2013 support Tier 1 content."
+  },
+  {
+   "col": 12,
+   "domain": "Coherence",
+   "text": "Intervention uses materials aligned to core instruction."
+  },
+  {
+   "col": 13,
+   "domain": "Coherence",
+   "text": "Leaders set one or two schoolwide goals each year, and clear barriers to help teachers focus on those goals."
+  }
+ ],
+ "resp": [
+  {
+   "level": "Central Office",
+   "ratings": {
+    "0": "Sometimes",
+    "1": "Sometimes",
+    "2": "Sometimes",
+    "3": "Sometimes",
+    "4": "Sometimes",
+    "5": "Sometimes",
+    "6": "Sometimes",
+    "7": "Sometimes",
+    "8": "Sometimes",
+    "9": "Sometimes",
+    "10": "Sometimes"
+   },
+   "q_well": "Belonging",
+   "q_next": "Consistency",
+   "q_support": ""
+  },
+  {
+   "level": "Elementary School",
+   "ratings": {
+    "0": "Most of the time",
+    "1": "Sometimes",
+    "2": "Sometimes",
+    "3": "Sometimes",
+    "4": "Most of the time",
+    "5": "Most of the time",
+    "6": "Most of the time",
+    "7": "Always",
+    "8": "Always",
+    "9": "Most of the time",
+    "10": "Always"
+   },
+   "q_well": "Much work has been done to support consistency and am hopeful that our mtss-a work will support greater academic coherence across tiers.",
+   "q_next": "See above.",
+   "q_support": "Best way for staff and paras to support supplemental materials within our curriculum to support coherence when you may not have a full understanding of all materials available at each grade level."
+  },
+  {
+   "level": "Central Office",
+   "ratings": {
+    "0": "Most of the time",
+    "1": "Sometimes",
+    "2": "Sometimes",
+    "3": "Sometimes",
+    "4": "Most of the time",
+    "5": "Sometimes",
+    "6": "Sometimes",
+    "7": "Sometimes",
+    "8": "Sometimes",
+    "9": "Sometimes",
+    "10": "Most of the time"
+   },
+   "q_well": "At an elementary level Fremont does well at knowing the students needs and invests in their well being.",
+   "q_next": "I believe Fremont should focus on coherence across all levels to create a shared focus towards tier 1 instruction.",
+   "q_support": "Time to collaborate at a district level for teachers to gain coherence in instruction."
+  },
+  {
+   "level": "High School",
+   "ratings": {
+    "0": "Always",
+    "1": "Most of the time",
+    "2": "Sometimes",
+    "3": "Sometimes",
+    "4": "Sometimes",
+    "5": "Sometimes",
+    "6": "Most of the time",
+    "7": "Sometimes",
+    "8": "Most of the time",
+    "9": "Sometimes",
+    "10": "Most of the time"
+   },
+   "q_well": "Consistency in providing HQIM.",
+   "q_next": "Ensuring the HQIM are being used.",
+   "q_support": "Getting teachers to let go of thinking they need to supplement the materials."
+  },
+  {
+   "level": "Elementary School",
+   "ratings": {
+    "0": "Most of the time",
+    "1": "Sometimes",
+    "2": "Most of the time",
+    "3": "Most of the time",
+    "4": "Most of the time",
+    "5": "Most of the time",
+    "6": "Most of the time",
+    "7": "Most of the time",
+    "8": "Most of the time",
+    "9": "Most of the time",
+    "10": "Most of the time"
+   },
+   "q_well": "The MTSS process we have developed for ELA in k-4",
+   "q_next": "Continue to reinforce the need to be teaching grade level content and increase the number of  students doing the thinking.",
+   "q_support": "Action steps around Consistency with interventions and supports."
+  },
+  {
+   "level": "High School",
+   "ratings": {
+    "0": "Sometimes",
+    "1": "Sometimes",
+    "2": "Never",
+    "3": "Sometimes",
+    "4": "Sometimes",
+    "5": "Sometimes",
+    "6": "Sometimes",
+    "7": "Sometimes",
+    "8": "Sometimes",
+    "9": "Sometimes",
+    "10": "Most of the time"
+   },
+   "q_well": "",
+   "q_next": "Opportunity for administrative teams to work together to develop preK -12 vision for implementing belonging,  consistency and coherence goals.",
+   "q_support": ""
+  },
+  {
+   "level": "Central Office",
+   "ratings": {
+    "0": "Sometimes",
+    "1": "Sometimes",
+    "2": "Sometimes",
+    "3": "Sometimes",
+    "4": "Sometimes",
+    "5": "Sometimes",
+    "6": "Sometimes",
+    "7": "Sometimes",
+    "8": "Sometimes",
+    "9": "Sometimes",
+    "10": "Most of the time"
+   },
+   "q_well": "CIP is moving us in a good direction",
+   "q_next": "Simplifying and focusing on cherrnce around tier 1",
+   "q_support": "A team that is moving in the same direction and open to feedback. I also believe considering moving back to a PLC structure could help us become more consistent, coherent, and improve a sense of belonging."
+  },
+  {
+   "level": "High School",
+   "ratings": {
+    "0": "Sometimes",
+    "1": "Most of the time",
+    "2": "Most of the time",
+    "3": "Sometimes",
+    "4": "Most of the time",
+    "5": "Sometimes",
+    "6": "Sometimes",
+    "7": "Sometimes",
+    "8": "Most of the time",
+    "9": "Sometimes",
+    "10": "Always"
+   },
+   "q_well": "We have been targeting Belonging for the past school year and will continue to drive that home. We need to work on the other two more consistently.",
+   "q_next": "We need to focus on Consistency. It's difficult in the high school setting with so many departments, but we are committed to figuring out what works best for our students.",
+   "q_support": "We have the materials and curriculum. We need teacher buy in."
+  },
+  {
+   "level": "Not specified",
+   "ratings": {
+    "0": "Sometimes",
+    "1": "Sometimes",
+    "2": "Sometimes",
+    "3": "Sometimes",
+    "4": "Most of the time",
+    "5": "Sometimes",
+    "6": "Sometimes",
+    "7": "Sometimes",
+    "8": "Sometimes",
+    "9": "Sometimes",
+    "10": "Sometimes"
+   },
+   "q_well": "I think Fremont has some \"bones\" in place that will allow these to happen, it is more about focusing and narrowing what is considered \"priority\".",
+   "q_next": "I think strong Tier 1 instruction and access is a good and important first step. Most content areas have HQIM, the focus needs to be more on how we are using it in all spaces, with all kids.",
+   "q_support": "I think more visibility and instructional mindset from leaders both building and teacher leaders can help to work with strong Tier 1 instruction."
+  },
+  {
+   "level": "Central Office",
+   "ratings": {
+    "0": "Sometimes",
+    "1": "Sometimes",
+    "2": "Most of the time",
+    "3": "Sometimes",
+    "4": "Most of the time",
+    "5": "Sometimes",
+    "6": "Sometimes",
+    "7": "Most of the time",
+    "8": "Sometimes",
+    "9": "Sometimes",
+    "10": "Most of the time"
+   },
+   "q_well": "We have pockets of great consistency and belonging led my building leaders that have high expectations for themselves as building leaders.",
+   "q_next": "I\u2019d love to see our district work towards improving our consistency. I feel that an improvement in consistency across our district will have a positive impact on belonging and coherence as well.",
+   "q_support": "Our team has some new members so we just need some time to learn each others strengths and find out the best way we can support our leaders."
+  },
+  {
+   "level": "Elementary School",
+   "ratings": {
+    "0": "Most of the time",
+    "1": "Sometimes",
+    "2": "Sometimes",
+    "3": "Sometimes",
+    "4": "Most of the time",
+    "5": "Sometimes",
+    "6": "Sometimes",
+    "7": "Sometimes",
+    "8": "Sometimes",
+    "9": "Sometimes",
+    "10": "Sometimes"
+   },
+   "q_well": "Providing HQIM",
+   "q_next": "Coherence between interventions for students.  Do they focus on grade level needs or missing baseline skills?  Or both?",
+   "q_support": "I would like my IF to do walk throughs with me to help me calibrate what I am seeing in classrooms to what I should be seeing in every lesson in every classroom."
+  },
+  {
+   "level": "Middle School",
+   "ratings": {
+    "0": "Sometimes",
+    "1": "Sometimes",
+    "2": "Sometimes",
+    "3": "Sometimes",
+    "4": "Sometimes",
+    "5": "Most of the time",
+    "6": "Most of the time",
+    "7": "Sometimes",
+    "8": "Most of the time",
+    "9": "Sometimes",
+    "10": "Always"
+   },
+   "q_well": "I think we have a good start with each category we just need to improve on each one.",
+   "q_next": "Attainable goals that are specific so teachers can focus one one or a few improvements then add more as they become mastered in those areas.",
+   "q_support": "Forms that are premade for teachers to input individual student data for teams and content areas to drive discussion on specific students and content."
+  },
+  {
+   "level": "Central Office",
+   "ratings": {
+    "0": "Most of the time",
+    "1": "Most of the time",
+    "2": "Most of the time",
+    "3": "Sometimes",
+    "4": "Sometimes",
+    "5": "Always",
+    "6": "Sometimes",
+    "7": "Sometimes",
+    "8": "Most of the time",
+    "9": "Sometimes",
+    "10": "Most of the time"
+   },
+   "q_well": "",
+   "q_next": "For birth-5- I am going to figure out how we can implement some of these processes now at the early level as we work closely with parents/caregivers and how we can carry it over into kindergarten so the kids are set up early.",
+   "q_support": "I would love to give the EC teachers time to collaborate and develop lessons that aren\u2019t within our curriculum for our lower and high kiddos to support all learners consistently across the district while teaching the same curriculum."
+  },
+  {
+   "level": "Elementary School",
+   "ratings": {
+    "0": "Most of the time",
+    "1": "Sometimes",
+    "2": "Most of the time",
+    "3": "Most of the time",
+    "4": "Most of the time",
+    "5": "Most of the time",
+    "6": "Sometimes",
+    "7": "Sometimes",
+    "8": "Sometimes",
+    "9": "Most of the time",
+    "10": "Most of the time"
+   },
+   "q_well": "Talking about it, laying the foundation for us to go deeper into this work.",
+   "q_next": "How we can find the time to do the collaboration necessary to bring consistency and coherence to what students receive in our Tier 1, intervention, EL, SPED, etc.",
+   "q_support": "This is something I am currently working on with my ESU partner.  The continued partnership with Eileen will be incredibly helpful in continue to make progress in closing the gap."
+  },
+  {
+   "level": "Middle School",
+   "ratings": {
+    "0": "Most of the time",
+    "1": "Sometimes",
+    "2": "Sometimes",
+    "3": "Sometimes",
+    "4": "Sometimes",
+    "5": "Sometimes",
+    "6": "Sometimes",
+    "7": "Never",
+    "8": "Sometimes",
+    "9": "Sometimes",
+    "10": "Sometimes"
+   },
+   "q_well": "The materials are quality and grade level appropriate. Teachers have been provided multiple professional learning opportunities to help improve instruction.",
+   "q_next": "JCAC will focus on consistent delivering of grade level material while maintaining high expectations.",
+   "q_support": "Grace and time to improve upon belonging, consistency and coherence. I have some lofty goals, but we will need to start with smaller steps with the big picture in mind. There will be change in the building and help with holding teachers accountable."
+  },
+  {
+   "level": "Elementary School",
+   "ratings": {
+    "0": "Sometimes",
+    "1": "Sometimes",
+    "2": "Sometimes",
+    "3": "Most of the time",
+    "4": "Most of the time",
+    "5": "Most of the time",
+    "6": "Most of the time",
+    "7": "Sometimes",
+    "8": "Sometimes",
+    "9": "Sometimes",
+    "10": "Most of the time"
+   },
+   "q_well": "Consistency- Emphasizing grade-level materials need to be used and utilizing IPG to check and monitor growth in this area.",
+   "q_next": "Take a deeper dive into coherence. What does a day look like for our students who are the furtherest behind. When they are pulled out of the classroom is it preparing them for the next days tier 1 lesson.",
+   "q_support": "This was great information and a great starting point to think about areas of growth for our school. I would like to work on consistency at our school and finding ways to give feedback to improve consistency."
+  },
+  {
+   "level": "Central Office",
+   "ratings": {
+    "0": "Most of the time",
+    "1": "Sometimes",
+    "2": "Sometimes",
+    "3": "Sometimes",
+    "4": "Most of the time",
+    "5": null,
+    "6": "Sometimes",
+    "7": "Most of the time",
+    "8": "Never",
+    "9": "Sometimes",
+    "10": "Never"
+   },
+   "q_well": "I think we are slowly improving each year in consistency, exposing all students to core instruction and HQIM",
+   "q_next": "Coherence - all areas supporting the tier 1 grade level curriculum",
+   "q_support": "Additional time with school leaders for collaborative conversations and to continue looking at how we can improve structures and practice."
+  },
+  {
+   "level": "Middle School",
+   "ratings": {
+    "0": "Most of the time",
+    "1": "Sometimes",
+    "2": "Sometimes",
+    "3": "Most of the time",
+    "4": "Most of the time",
+    "5": "Sometimes",
+    "6": "Sometimes",
+    "7": "Sometimes",
+    "8": "Sometimes",
+    "9": "Sometimes",
+    "10": "Most of the time"
+   },
+   "q_well": "Many structures are in place. Focus on climate, culture, and relationships. Aligned initiatives.",
+   "q_next": "Consistency-grade level instruction for all\nCoherence-aligning Tier 1 to Interventions",
+   "q_support": "PLC\u2019s or similar option to allow time for depts to do work"
+  },
+  {
+   "level": "Not specified",
+   "ratings": {
+    "0": "Most of the time",
+    "1": "Most of the time",
+    "2": "Sometimes",
+    "3": "Most of the time",
+    "4": "Most of the time",
+    "5": "Sometimes",
+    "6": "Sometimes",
+    "7": "Sometimes",
+    "8": "Most of the time",
+    "9": "Most of the time",
+    "10": "Most of the time"
+   },
+   "q_well": "We want all of these things. We have a collective efficacy that we can achieve consistency, coherence, and belonging. However when the year gets started and it\u2019s busy and began it\u2019s become overwhelming we go into survival mode and the coherency and consistency take a backseat.",
+   "q_next": "Consistency- admin need the support and training to coach teachers so they can ensure the \u201ctwin test\u201d is successful, and academic growth in s happening in all classrooms.\nGoal 2 coherence- is IXL preteaching needed skills at the right time?",
+   "q_support": "I want to understand the curriculum and materials available to our teachers. It would make July feedback for students act more effective."
+  },
+  {
+   "level": "High School",
+   "ratings": {
+    "0": "Sometimes",
+    "1": "Most of the time",
+    "2": "Never",
+    "3": "Sometimes",
+    "4": "Most of the time",
+    "5": "Most of the time",
+    "6": "Most of the time",
+    "7": "Sometimes",
+    "8": "Sometimes",
+    "9": "Sometimes",
+    "10": "Most of the time"
+   },
+   "q_well": "I believe we have a lot of structures in place as a district (and at the school building level) to support all of these areas.",
+   "q_next": "Emphasizing providing the same grade-level assignments for all students with varying supports.",
+   "q_support": "Time for teachers teaching the same courses to work together to align their courses/assignments/assessments."
+  },
+  {
+   "level": "Elementary School",
+   "ratings": {
+    "0": "Most of the time",
+    "1": "Never",
+    "2": "Most of the time",
+    "3": "Most of the time",
+    "4": "Always",
+    "5": "Most of the time",
+    "6": "Sometimes",
+    "7": "Always",
+    "8": "Most of the time",
+    "9": "Most of the time",
+    "10": "Always"
+   },
+   "q_well": "Developing a sense of belonging has been a focus for several years. Creating a mindset that these students are \u201cour students\u201d.",
+   "q_next": "Coherence\u2014instruction in the classroom at tier 1 level needs to be given at the intervention/resource level too.",
+   "q_support": ""
+  },
+  {
+   "level": "Central Office",
+   "ratings": {
+    "0": "Sometimes",
+    "1": "Sometimes",
+    "2": "Sometimes",
+    "3": "Sometimes",
+    "4": "Most of the time",
+    "5": "Sometimes",
+    "6": "Sometimes",
+    "7": "Sometimes",
+    "8": "Most of the time",
+    "9": "Most of the time",
+    "10": "Sometimes"
+   },
+   "q_well": "Fremont has a wealth of core instructional materials that offers built in scaffolding and leveled materials.",
+   "q_next": "Alignment of instruction across specialty areas and build teacher access and knowledge around the materials currently used by the district.",
+   "q_support": "Inspiration to motivate and encourage all teachers to create and hold high expectations and opportunities for students to access challenging materials (not limiting)."
+  },
+  {
+   "level": "Middle School",
+   "ratings": {
+    "0": "Always",
+    "1": "Most of the time",
+    "2": "Sometimes",
+    "3": "Sometimes",
+    "4": "Most of the time",
+    "5": "Most of the time",
+    "6": "Sometimes",
+    "7": "Sometimes",
+    "8": "Sometimes",
+    "9": "Most of the time",
+    "10": "Most of the time"
+   },
+   "q_well": "At FMS- we have belonging when it comes to teachers belonging and feeling bought in and working together. We, according to data, see our students need more belonging, even though we feel strongly that we have great relationships built between staff and students and put a large amount of time and emphasis on this each year. We have access to HQIM consistently and it is being used but how it is being used by students needs to be more consistent. The twin test needs to be stronger in some core content areas. Other core content areas are farther along and are much improved in the area is consistency. Need to move the needle for all.",
+   "q_next": "Consistency",
+   "q_support": "Priorities, how do we focus and get good at the most important items and how do we select these most important for our students and staff."
+  },
+  {
+   "level": "Middle School",
+   "ratings": {
+    "0": "Always",
+    "1": "Always",
+    "2": "Sometimes",
+    "3": "Sometimes",
+    "4": "Most of the time",
+    "5": "Most of the time",
+    "6": "Most of the time",
+    "7": "Most of the time",
+    "8": "Most of the time",
+    "9": "Most of the time",
+    "10": "Always"
+   },
+   "q_well": "I think Fremont is consistently working to improve in all of these areas.",
+   "q_next": "I haven\u2019t had time in my new role to assess what would the most appropriate focus for FMS, but I think the area of adult belonging would be a great place to start. I think taking time to breakdown the roles of each adult working in the school building and showing how each role plays an important part of the big picture in helping students to be proficient at their grade level would be beneficial.",
+   "q_support": "Personally I need to become more knowledgeable with subject area curriculum so that I can be a better resource for our teaching staff when they are planning personalized learning for our students"
+  }
+ ],
+ "all": [
+  {
+   "domain": "Belonging",
+   "text": "The school has structures and practices that build collective knowledge of students.",
+   "counts": {
+    "Never": 0,
+    "Sometimes": 10,
+    "Most of the time": 11,
+    "Always": 3
+   },
+   "n": 24,
+   "avg": 2.71
+  },
+  {
+   "domain": "Belonging",
+   "text": "Specialists collaborate with core classroom teachers to support students' individual needs.",
+   "counts": {
+    "Never": 1,
+    "Sometimes": 16,
+    "Most of the time": 6,
+    "Always": 1
+   },
+   "n": 24,
+   "avg": 2.29
+  },
+  {
+   "domain": "Belonging",
+   "text": "The school has clear goals for growth that put students on track to reach grade level over time.",
+   "counts": {
+    "Never": 2,
+    "Sometimes": 16,
+    "Most of the time": 6,
+    "Always": 0
+   },
+   "n": 24,
+   "avg": 2.17
+  },
+  {
+   "domain": "Consistency",
+   "text": "Every student works on grade-level work, with varying degrees of support and scaffolding as needed.",
+   "counts": {
+    "Never": 0,
+    "Sometimes": 18,
+    "Most of the time": 6,
+    "Always": 0
+   },
+   "n": 24,
+   "avg": 2.25
+  },
+  {
+   "domain": "Consistency",
+   "text": "Most teachers use the adopted curriculum most of the time.",
+   "counts": {
+    "Never": 0,
+    "Sometimes": 7,
+    "Most of the time": 16,
+    "Always": 1
+   },
+   "n": 24,
+   "avg": 2.75
+  },
+  {
+   "domain": "Consistency",
+   "text": "In team meetings, teachers commit to concrete actions for individual students.",
+   "counts": {
+    "Never": 0,
+    "Sometimes": 13,
+    "Most of the time": 9,
+    "Always": 1
+   },
+   "n": 23,
+   "avg": 2.48
+  },
+  {
+   "domain": "Consistency",
+   "text": "Leaders name and reinforce foundational instructional practices to minimize variation between classrooms.",
+   "counts": {
+    "Never": 0,
+    "Sometimes": 17,
+    "Most of the time": 7,
+    "Always": 0
+   },
+   "n": 24,
+   "avg": 2.29
+  },
+  {
+   "domain": "Consistency",
+   "text": "Leaders do regular, non-evaluative classroom walk-throughs and provide focused feedback.",
+   "counts": {
+    "Never": 1,
+    "Sometimes": 17,
+    "Most of the time": 4,
+    "Always": 2
+   },
+   "n": 24,
+   "avg": 2.29
+  },
+  {
+   "domain": "Coherence",
+   "text": "All learning spaces \u2013 core classes, intervention, tutoring, and extended time \u2013 support Tier 1 content.",
+   "counts": {
+    "Never": 1,
+    "Sometimes": 13,
+    "Most of the time": 9,
+    "Always": 1
+   },
+   "n": 24,
+   "avg": 2.42
+  },
+  {
+   "domain": "Coherence",
+   "text": "Intervention uses materials aligned to core instruction.",
+   "counts": {
+    "Never": 0,
+    "Sometimes": 16,
+    "Most of the time": 8,
+    "Always": 0
+   },
+   "n": 24,
+   "avg": 2.33
+  },
+  {
+   "domain": "Coherence",
+   "text": "Leaders set one or two schoolwide goals each year, and clear barriers to help teachers focus on those goals.",
+   "counts": {
+    "Never": 1,
+    "Sometimes": 5,
+    "Most of the time": 13,
+    "Always": 5
+   },
+   "n": 24,
+   "avg": 2.92
+  }
+ ],
+ "bylevel": {
+  "Central Office": [
+   {
+    "domain": "Belonging",
+    "text": "The school has structures and practices that build collective knowledge of students.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 4,
+     "Most of the time": 3,
+     "Always": 0
+    },
+    "n": 7,
+    "avg": 2.43
+   },
+   {
+    "domain": "Belonging",
+    "text": "Specialists collaborate with core classroom teachers to support students' individual needs.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 6,
+     "Most of the time": 1,
+     "Always": 0
+    },
+    "n": 7,
+    "avg": 2.14
+   },
+   {
+    "domain": "Belonging",
+    "text": "The school has clear goals for growth that put students on track to reach grade level over time.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 5,
+     "Most of the time": 2,
+     "Always": 0
+    },
+    "n": 7,
+    "avg": 2.29
+   },
+   {
+    "domain": "Consistency",
+    "text": "Every student works on grade-level work, with varying degrees of support and scaffolding as needed.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 7,
+     "Most of the time": 0,
+     "Always": 0
+    },
+    "n": 7,
+    "avg": 2.0
+   },
+   {
+    "domain": "Consistency",
+    "text": "Most teachers use the adopted curriculum most of the time.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 3,
+     "Most of the time": 4,
+     "Always": 0
+    },
+    "n": 7,
+    "avg": 2.57
+   },
+   {
+    "domain": "Consistency",
+    "text": "In team meetings, teachers commit to concrete actions for individual students.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 5,
+     "Most of the time": 0,
+     "Always": 1
+    },
+    "n": 6,
+    "avg": 2.33
+   },
+   {
+    "domain": "Consistency",
+    "text": "Leaders name and reinforce foundational instructional practices to minimize variation between classrooms.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 7,
+     "Most of the time": 0,
+     "Always": 0
+    },
+    "n": 7,
+    "avg": 2.0
+   },
+   {
+    "domain": "Consistency",
+    "text": "Leaders do regular, non-evaluative classroom walk-throughs and provide focused feedback.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 5,
+     "Most of the time": 2,
+     "Always": 0
+    },
+    "n": 7,
+    "avg": 2.29
+   },
+   {
+    "domain": "Coherence",
+    "text": "All learning spaces \u2013 core classes, intervention, tutoring, and extended time \u2013 support Tier 1 content.",
+    "counts": {
+     "Never": 1,
+     "Sometimes": 4,
+     "Most of the time": 2,
+     "Always": 0
+    },
+    "n": 7,
+    "avg": 2.14
+   },
+   {
+    "domain": "Coherence",
+    "text": "Intervention uses materials aligned to core instruction.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 6,
+     "Most of the time": 1,
+     "Always": 0
+    },
+    "n": 7,
+    "avg": 2.14
+   },
+   {
+    "domain": "Coherence",
+    "text": "Leaders set one or two schoolwide goals each year, and clear barriers to help teachers focus on those goals.",
+    "counts": {
+     "Never": 1,
+     "Sometimes": 2,
+     "Most of the time": 4,
+     "Always": 0
+    },
+    "n": 7,
+    "avg": 2.43
+   }
+  ],
+  "Elementary School": [
+   {
+    "domain": "Belonging",
+    "text": "The school has structures and practices that build collective knowledge of students.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 1,
+     "Most of the time": 5,
+     "Always": 0
+    },
+    "n": 6,
+    "avg": 2.83
+   },
+   {
+    "domain": "Belonging",
+    "text": "Specialists collaborate with core classroom teachers to support students' individual needs.",
+    "counts": {
+     "Never": 1,
+     "Sometimes": 5,
+     "Most of the time": 0,
+     "Always": 0
+    },
+    "n": 6,
+    "avg": 1.83
+   },
+   {
+    "domain": "Belonging",
+    "text": "The school has clear goals for growth that put students on track to reach grade level over time.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 3,
+     "Most of the time": 3,
+     "Always": 0
+    },
+    "n": 6,
+    "avg": 2.5
+   },
+   {
+    "domain": "Consistency",
+    "text": "Every student works on grade-level work, with varying degrees of support and scaffolding as needed.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 2,
+     "Most of the time": 4,
+     "Always": 0
+    },
+    "n": 6,
+    "avg": 2.67
+   },
+   {
+    "domain": "Consistency",
+    "text": "Most teachers use the adopted curriculum most of the time.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 0,
+     "Most of the time": 5,
+     "Always": 1
+    },
+    "n": 6,
+    "avg": 3.17
+   },
+   {
+    "domain": "Consistency",
+    "text": "In team meetings, teachers commit to concrete actions for individual students.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 1,
+     "Most of the time": 5,
+     "Always": 0
+    },
+    "n": 6,
+    "avg": 2.83
+   },
+   {
+    "domain": "Consistency",
+    "text": "Leaders name and reinforce foundational instructional practices to minimize variation between classrooms.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 3,
+     "Most of the time": 3,
+     "Always": 0
+    },
+    "n": 6,
+    "avg": 2.5
+   },
+   {
+    "domain": "Consistency",
+    "text": "Leaders do regular, non-evaluative classroom walk-throughs and provide focused feedback.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 3,
+     "Most of the time": 1,
+     "Always": 2
+    },
+    "n": 6,
+    "avg": 2.83
+   },
+   {
+    "domain": "Coherence",
+    "text": "All learning spaces \u2013 core classes, intervention, tutoring, and extended time \u2013 support Tier 1 content.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 3,
+     "Most of the time": 2,
+     "Always": 1
+    },
+    "n": 6,
+    "avg": 2.67
+   },
+   {
+    "domain": "Coherence",
+    "text": "Intervention uses materials aligned to core instruction.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 2,
+     "Most of the time": 4,
+     "Always": 0
+    },
+    "n": 6,
+    "avg": 2.67
+   },
+   {
+    "domain": "Coherence",
+    "text": "Leaders set one or two schoolwide goals each year, and clear barriers to help teachers focus on those goals.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 1,
+     "Most of the time": 3,
+     "Always": 2
+    },
+    "n": 6,
+    "avg": 3.17
+   }
+  ],
+  "Middle School": [
+   {
+    "domain": "Belonging",
+    "text": "The school has structures and practices that build collective knowledge of students.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 1,
+     "Most of the time": 2,
+     "Always": 2
+    },
+    "n": 5,
+    "avg": 3.2
+   },
+   {
+    "domain": "Belonging",
+    "text": "Specialists collaborate with core classroom teachers to support students' individual needs.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 3,
+     "Most of the time": 1,
+     "Always": 1
+    },
+    "n": 5,
+    "avg": 2.6
+   },
+   {
+    "domain": "Belonging",
+    "text": "The school has clear goals for growth that put students on track to reach grade level over time.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 5,
+     "Most of the time": 0,
+     "Always": 0
+    },
+    "n": 5,
+    "avg": 2.0
+   },
+   {
+    "domain": "Consistency",
+    "text": "Every student works on grade-level work, with varying degrees of support and scaffolding as needed.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 4,
+     "Most of the time": 1,
+     "Always": 0
+    },
+    "n": 5,
+    "avg": 2.2
+   },
+   {
+    "domain": "Consistency",
+    "text": "Most teachers use the adopted curriculum most of the time.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 2,
+     "Most of the time": 3,
+     "Always": 0
+    },
+    "n": 5,
+    "avg": 2.6
+   },
+   {
+    "domain": "Consistency",
+    "text": "In team meetings, teachers commit to concrete actions for individual students.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 2,
+     "Most of the time": 3,
+     "Always": 0
+    },
+    "n": 5,
+    "avg": 2.6
+   },
+   {
+    "domain": "Consistency",
+    "text": "Leaders name and reinforce foundational instructional practices to minimize variation between classrooms.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 3,
+     "Most of the time": 2,
+     "Always": 0
+    },
+    "n": 5,
+    "avg": 2.4
+   },
+   {
+    "domain": "Consistency",
+    "text": "Leaders do regular, non-evaluative classroom walk-throughs and provide focused feedback.",
+    "counts": {
+     "Never": 1,
+     "Sometimes": 3,
+     "Most of the time": 1,
+     "Always": 0
+    },
+    "n": 5,
+    "avg": 2.0
+   },
+   {
+    "domain": "Coherence",
+    "text": "All learning spaces \u2013 core classes, intervention, tutoring, and extended time \u2013 support Tier 1 content.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 3,
+     "Most of the time": 2,
+     "Always": 0
+    },
+    "n": 5,
+    "avg": 2.4
+   },
+   {
+    "domain": "Coherence",
+    "text": "Intervention uses materials aligned to core instruction.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 3,
+     "Most of the time": 2,
+     "Always": 0
+    },
+    "n": 5,
+    "avg": 2.4
+   },
+   {
+    "domain": "Coherence",
+    "text": "Leaders set one or two schoolwide goals each year, and clear barriers to help teachers focus on those goals.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 1,
+     "Most of the time": 2,
+     "Always": 2
+    },
+    "n": 5,
+    "avg": 3.2
+   }
+  ],
+  "High School": [
+   {
+    "domain": "Belonging",
+    "text": "The school has structures and practices that build collective knowledge of students.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 3,
+     "Most of the time": 0,
+     "Always": 1
+    },
+    "n": 4,
+    "avg": 2.5
+   },
+   {
+    "domain": "Belonging",
+    "text": "Specialists collaborate with core classroom teachers to support students' individual needs.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 1,
+     "Most of the time": 3,
+     "Always": 0
+    },
+    "n": 4,
+    "avg": 2.75
+   },
+   {
+    "domain": "Belonging",
+    "text": "The school has clear goals for growth that put students on track to reach grade level over time.",
+    "counts": {
+     "Never": 2,
+     "Sometimes": 1,
+     "Most of the time": 1,
+     "Always": 0
+    },
+    "n": 4,
+    "avg": 1.75
+   },
+   {
+    "domain": "Consistency",
+    "text": "Every student works on grade-level work, with varying degrees of support and scaffolding as needed.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 4,
+     "Most of the time": 0,
+     "Always": 0
+    },
+    "n": 4,
+    "avg": 2.0
+   },
+   {
+    "domain": "Consistency",
+    "text": "Most teachers use the adopted curriculum most of the time.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 2,
+     "Most of the time": 2,
+     "Always": 0
+    },
+    "n": 4,
+    "avg": 2.5
+   },
+   {
+    "domain": "Consistency",
+    "text": "In team meetings, teachers commit to concrete actions for individual students.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 3,
+     "Most of the time": 1,
+     "Always": 0
+    },
+    "n": 4,
+    "avg": 2.25
+   },
+   {
+    "domain": "Consistency",
+    "text": "Leaders name and reinforce foundational instructional practices to minimize variation between classrooms.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 2,
+     "Most of the time": 2,
+     "Always": 0
+    },
+    "n": 4,
+    "avg": 2.5
+   },
+   {
+    "domain": "Consistency",
+    "text": "Leaders do regular, non-evaluative classroom walk-throughs and provide focused feedback.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 4,
+     "Most of the time": 0,
+     "Always": 0
+    },
+    "n": 4,
+    "avg": 2.0
+   },
+   {
+    "domain": "Coherence",
+    "text": "All learning spaces \u2013 core classes, intervention, tutoring, and extended time \u2013 support Tier 1 content.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 2,
+     "Most of the time": 2,
+     "Always": 0
+    },
+    "n": 4,
+    "avg": 2.5
+   },
+   {
+    "domain": "Coherence",
+    "text": "Intervention uses materials aligned to core instruction.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 4,
+     "Most of the time": 0,
+     "Always": 0
+    },
+    "n": 4,
+    "avg": 2.0
+   },
+   {
+    "domain": "Coherence",
+    "text": "Leaders set one or two schoolwide goals each year, and clear barriers to help teachers focus on those goals.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 0,
+     "Most of the time": 3,
+     "Always": 1
+    },
+    "n": 4,
+    "avg": 3.25
+   }
+  ],
+  "Not specified": [
+   {
+    "domain": "Belonging",
+    "text": "The school has structures and practices that build collective knowledge of students.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 1,
+     "Most of the time": 1,
+     "Always": 0
+    },
+    "n": 2,
+    "avg": 2.5
+   },
+   {
+    "domain": "Belonging",
+    "text": "Specialists collaborate with core classroom teachers to support students' individual needs.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 1,
+     "Most of the time": 1,
+     "Always": 0
+    },
+    "n": 2,
+    "avg": 2.5
+   },
+   {
+    "domain": "Belonging",
+    "text": "The school has clear goals for growth that put students on track to reach grade level over time.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 2,
+     "Most of the time": 0,
+     "Always": 0
+    },
+    "n": 2,
+    "avg": 2.0
+   },
+   {
+    "domain": "Consistency",
+    "text": "Every student works on grade-level work, with varying degrees of support and scaffolding as needed.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 1,
+     "Most of the time": 1,
+     "Always": 0
+    },
+    "n": 2,
+    "avg": 2.5
+   },
+   {
+    "domain": "Consistency",
+    "text": "Most teachers use the adopted curriculum most of the time.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 0,
+     "Most of the time": 2,
+     "Always": 0
+    },
+    "n": 2,
+    "avg": 3.0
+   },
+   {
+    "domain": "Consistency",
+    "text": "In team meetings, teachers commit to concrete actions for individual students.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 2,
+     "Most of the time": 0,
+     "Always": 0
+    },
+    "n": 2,
+    "avg": 2.0
+   },
+   {
+    "domain": "Consistency",
+    "text": "Leaders name and reinforce foundational instructional practices to minimize variation between classrooms.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 2,
+     "Most of the time": 0,
+     "Always": 0
+    },
+    "n": 2,
+    "avg": 2.0
+   },
+   {
+    "domain": "Consistency",
+    "text": "Leaders do regular, non-evaluative classroom walk-throughs and provide focused feedback.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 2,
+     "Most of the time": 0,
+     "Always": 0
+    },
+    "n": 2,
+    "avg": 2.0
+   },
+   {
+    "domain": "Coherence",
+    "text": "All learning spaces \u2013 core classes, intervention, tutoring, and extended time \u2013 support Tier 1 content.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 1,
+     "Most of the time": 1,
+     "Always": 0
+    },
+    "n": 2,
+    "avg": 2.5
+   },
+   {
+    "domain": "Coherence",
+    "text": "Intervention uses materials aligned to core instruction.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 1,
+     "Most of the time": 1,
+     "Always": 0
+    },
+    "n": 2,
+    "avg": 2.5
+   },
+   {
+    "domain": "Coherence",
+    "text": "Leaders set one or two schoolwide goals each year, and clear barriers to help teachers focus on those goals.",
+    "counts": {
+     "Never": 0,
+     "Sometimes": 1,
+     "Most of the time": 1,
+     "Always": 0
+    },
+    "n": 2,
+    "avg": 2.5
+   }
+  ]
+ },
+ "levels": [
+  "Central Office",
+  "Elementary School",
+  "Middle School",
+  "High School",
+  "Not specified"
+ ],
+ "scale": [
+  "Never",
+  "Sometimes",
+  "Most of the time",
+  "Always"
+ ]
+}
